@@ -1,0 +1,22 @@
+.exp{background:var(--parchment);padding-block:var(--sp6);}
+.exp-list{border-top:1.5px solid var(--text-dark);margin-top:var(--sp3);}
+.exp-row{display:grid;grid-template-columns:9rem 1fr 6.5rem;gap:var(--sp3);padding:1.5rem 0;border-bottom:1.5px solid var(--parchment-dim);align-items:start;}
+.exp-period{font-family:var(--font-mono);font-size:.72rem;color:var(--crimson);letter-spacing:.02em;padding-top:.2em;}
+.exp-role{font-family:var(--font-display);font-weight:800;font-size:1.15rem;letter-spacing:.01em;color:var(--text-dark);text-transform:uppercase;line-height:1.15;}
+.exp-org{font-family:var(--font-body);font-weight:500;font-size:.85rem;text-transform:none;color:var(--text-mute);}
+.exp-summary{font-size:.9rem;color:var(--text-body);margin-top:.4em;line-height:1.55;max-width:56ch;}
+.exp-tags{display:flex;flex-wrap:wrap;gap:.4em;margin-top:.7em;}
+.exp-tags span{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.03em;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);border-radius:999px;padding:.25em .7em;}
+.exp-type{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-mute);text-align:right;padding-top:.3em;}
+
+.cert-strip{margin-top:var(--sp5);border-top:1.5px dashed var(--text-mute);padding-top:var(--sp3);}
+.cert-strip-title{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mute);margin-bottom:var(--sp2);}
+.cert-strip-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp2);}
+.cert-chip{background:var(--paper);border:1px solid var(--parchment-dim);border-radius:var(--r-sm);padding:.9rem 1rem;}
+.cert-chip-title{display:block;font-size:.83rem;font-weight:600;color:var(--text-dark);line-height:1.35;margin-bottom:.3em;}
+.cert-chip-meta{display:block;font-family:var(--font-mono);font-size:.66rem;color:var(--text-mute);text-transform:uppercase;letter-spacing:.03em;}
+
+@media(max-width:720px){
+  .exp-row{grid-template-columns:1fr;gap:.4rem;}
+  .exp-type{text-align:left;}
+}

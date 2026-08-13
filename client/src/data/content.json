@@ -1,0 +1,561 @@
+{
+  "profile": {
+    "name": "Chandra Bhakta Adhikari",
+    "shortName": "C.B. Adhikari",
+    "title": "Program Manager & Strategic Partnerships",
+    "tagline": "From ideas to action, from connections to impact.",
+    "availability": "Open to partnerships & speaking invitations",
+    "location": "Bhaktapur, Nepal",
+    "coordinates": "27.6710° N, 85.4298° E",
+    "email": "info@adhikarichandra.com.np",
+    "phone": "+977-9851301722",
+    "whatsapp": "https://wa.me/9779851301722",
+    "birthplace": "Panchthar",
+    "education": "B.Sc. Geology, Tribhuvan University",
+    "languages": [
+      "Nepali",
+      "English",
+      "Hindi"
+    ],
+    "summary": "Geologist by training, organiser by instinct. Five years turning national summits, disaster-response training and youth leadership into measurable movement across 62 districts, three countries, and one very full passport.",
+    "bioLong": "I started in the field, mapping ground, reading rock, standing in places most people only see on a relief map. That habit never left: I still show up in person, still walk the site before I trust the report. Somewhere between geological survey and a Rotaract podium, I found the actual job: getting NGOs, government offices, sponsors and communities to sit at the same table and leave with a plan. Nepal Business Summit, Rotaract District 3292, Asha Nepal's 29 schools, WASH campaigns in villages with no signal. Different rooms, same instinct.",
+    "positioning": [
+      "Program Manager",
+      "Strategic Partnerships",
+      "Youth Leadership & Entrepreneurship"
+    ]
+  },
+  "stats": [
+    {
+      "value": "5+",
+      "unit": "Years",
+      "label": "NGO, govt & business"
+    },
+    {
+      "value": "5K+",
+      "unit": "People",
+      "label": "Trained in leadership"
+    },
+    {
+      "value": "62",
+      "unit": "Districts",
+      "label": "Field-verified reach"
+    },
+    {
+      "value": "30+",
+      "unit": "Schools",
+      "label": "Education & community projects"
+    }
+  ],
+  "capabilities": [
+    {
+      "word": "PROGRAM MANAGEMENT",
+      "note": "National summits to single-village trainings"
+    },
+    {
+      "word": "STRATEGIC PARTNERSHIPS",
+      "note": "Sponsors, ministries, media, industry"
+    },
+    {
+      "word": "PUBLIC SPEAKING",
+      "note": "Keynotes, panels, district installations"
+    },
+    {
+      "word": "GIS & GEOLOGY",
+      "note": "Field mapping, ERT, SRT, spatial survey"
+    },
+    {
+      "word": "DISASTER RISK REDUCTION",
+      "note": "Climate adaptation, WASH, MHM"
+    },
+    {
+      "word": "LEADERSHIP TRAINING",
+      "note": "5,000+ coached across 20+ districts"
+    }
+  ],
+  "projects": [
+    {
+      "id": "nbs",
+      "kicker": "Case File 01: National Program",
+      "title": "Nepal Business Summit",
+      "role": "Program Manager, Nepal Business Institute",
+      "period": "Sep 2025 to Present",
+      "stat": {
+        "value": "3",
+        "label": "National summits delivered end-to-end"
+      },
+      "hero": "chandra-bhakta-adhikari-nepal-business-summit.jpg",
+      "dek": "Ministries, sponsors, media and entrepreneurs. One stage, one week, and every logistics chain running through a single plan.",
+      "body": "The Nepal Business Summit and the Nepal Youth Entrepreneurship Summit don't happen because a venue is booked. They happen because a hundred separate agreements land on the same day. I own that chain: strategy, budget, sponsorship, government liaison, stall allocation, media, and the FAQ document that keeps three hundred exhibitors from calling the same number at once. Two years running the program office, now leading it outright.",
+      "highlights": [
+        "Led planning and delivery for two flagship national summits",
+        "Grew sponsorship and strategic partnerships year over year",
+        "Built the stakeholder and vendor coordination system now used as the program template"
+      ],
+      "tags": [
+        "Program Management",
+        "Sponsorship",
+        "Government Liaison"
+      ]
+    },
+    {
+      "id": "mhm",
+      "kicker": "Case File 02: Field Campaign",
+      "title": "MHM & WASH, Village to Village",
+      "role": "Trainer & Consultant, Connection Nepal / Eco Connect",
+      "period": "2019 to Present",
+      "stat": {
+        "value": "5,000+",
+        "label": "Youth & educators trained, 20+ districts"
+      },
+      "hero": "chandra-bhakta-adhikari-mhm-wash-training.jpg",
+      "dek": "Reusable sanitary pads, disaster response, climate adaptation. Training built for classrooms with no electricity and a lot at stake.",
+      "body": "Some of these sessions happen twelve days at a stretch, in municipalities you won't find pinned on a tourist map: Baitadi, Rautahat, Sindhupalchok, Mahottari. Menstrual Hygiene Management, WASH-in-schools, and Disaster Risk Reduction training, built from manuals I write myself and teach myself, because the content only works if it survives contact with an actual classroom.",
+      "highlights": [
+        "Designed and delivered training manuals still in active use across partner districts",
+        "Ran enterprise-development tracks turning MHM training into small local businesses",
+        "Coordinated disaster-response and climate-adaptation sessions alongside core MHM/WASH work"
+      ],
+      "tags": [
+        "MHM",
+        "WASH",
+        "DRR Training",
+        "Enterprise Development"
+      ]
+    },
+    {
+      "id": "rotaract",
+      "kicker": "Case File 03: Regional Leadership",
+      "title": "District Secretary, Rotaract 3292",
+      "role": "Rotary International's youth service arm, Nepal & Bhutan",
+      "period": "Jul 2025 to Jun 2026",
+      "stat": {
+        "value": "180+",
+        "label": "Clubs coordinated across two countries"
+      },
+      "hero": "chandra-bhakta-adhikari-rotaract-district-3292.jpg",
+      "dek": "Six years climbing from Sergeant-at-Arms to running district administration for one of Rotary's largest youth networks.",
+      "body": "District Secretary is the job where nothing is glamorous and everything has to work: governance, communication, records, and the connective tissue between 180-plus clubs across Nepal and Bhutan. I got here by doing the smaller jobs first: club president, SAP coordinator, assistant district secretary. Every rung taught the one that came after it.",
+      "highlights": [
+        "Administers district-wide communication and governance for 180+ Rotaract clubs",
+        "Progressed through five leadership roles over six consecutive years",
+        "Mentors club leadership as Adviser, Rotaract Club of Sukedhara"
+      ],
+      "tags": [
+        "Governance",
+        "Youth Leadership",
+        "Cross-border Coordination"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "nbi-pm",
+      "role": "Program Manager",
+      "org": "Nepal Business Institute",
+      "period": "Sep 2025 to Present",
+      "type": "Full-time",
+      "summary": "Leading planning and delivery of national programs: Nepal Business Summit & Youth Entrepreneurship Summit 2026.",
+      "tags": [
+        "Program Management",
+        "Strategic Partnerships"
+      ]
+    },
+    {
+      "id": "nbi-po",
+      "role": "Program Officer",
+      "org": "Nepal Business Institute",
+      "period": "Oct 2024 to Sep 2025",
+      "type": "Full-time",
+      "summary": "Coordinated both national summits end to end: sponsors, media, policymakers, logistics.",
+      "tags": [
+        "Event Management",
+        "Marketing"
+      ]
+    },
+    {
+      "id": "asha-pc",
+      "role": "Project Coordinator",
+      "org": "Asha Project Nepal",
+      "period": "Jan 2019 to Present",
+      "type": "Part-time",
+      "summary": "Overseeing delivery across 29 schools, 18 districts: education, sanitation, community development.",
+      "tags": [
+        "Project Management",
+        "Donor Reporting"
+      ]
+    },
+    {
+      "id": "connection-trainer",
+      "role": "Trainer & Consultant",
+      "org": "Connection Nepal / Eco Connect",
+      "period": "2019 to Present",
+      "type": "Consulting",
+      "summary": "DRR, climate adaptation, MHM & WASH training across 20+ districts.",
+      "tags": [
+        "DRR Training",
+        "WASH",
+        "Capacity Building"
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "group": "Nepal Business Institute",
+      "groupSubtitle": "Program leadership and entrepreneurship development",
+      "roles": [
+        {
+          "role": "Program Manager",
+          "org": "Nepal Business Institute",
+          "period": "Sep 2025 to Present",
+          "detail": "Leads planning and execution of national-level business and entrepreneurship summits."
+        },
+        {
+          "role": "Program Officer",
+          "org": "Nepal Business Institute",
+          "period": "Oct 2024 to Sep 2025",
+          "detail": "Coordinated Nepal Business Summit 2025 and Youth Entrepreneurship Summit 2025."
+        }
+      ]
+    },
+    {
+      "group": "Rotaract District 3292, Nepal & Bhutan",
+      "groupSubtitle": "Rotary International's youth service arm · 150+ clubs",
+      "roles": [
+        {
+          "role": "District Secretary",
+          "org": "Rotaract District 3292",
+          "period": "Jul 2025 to Jun 2026",
+          "detail": "Leads district administration, communications and coordination across 150+ clubs."
+        },
+        {
+          "role": "Assistant District Rotaract Representative",
+          "org": "Rotaract District 3292",
+          "period": "Jun 2024 to Apr 2025",
+          "detail": "Supported leadership development, governance and national-level coordination."
+        },
+        {
+          "role": "Assistant District Secretary",
+          "org": "Rotaract District 3292",
+          "period": "Jul 2023 to Jun 2024",
+          "detail": "Managed district records and inter-club communication systems."
+        },
+        {
+          "role": "Sergeant-at-Arms",
+          "org": "Rotaract District 3292",
+          "period": "Jul 2022 to Jun 2023",
+          "detail": "Supported meeting protocols and district event coordination."
+        }
+      ]
+    },
+    {
+      "group": "Rotaract Club of Sukedhara",
+      "groupSubtitle": "Leadership progression from SAP Coordinator to Club Adviser",
+      "roles": [
+        {
+          "role": "Club Adviser",
+          "org": "Rotaract Club of Sukedhara",
+          "period": "Jul 2023 to Present",
+          "detail": "Mentoring club leadership in strategy, project planning and execution."
+        },
+        {
+          "role": "Immediate Past President",
+          "org": "Rotaract Club of Sukedhara",
+          "period": "Jul 2021 to Jun 2022",
+          "detail": "Provided advisory support for leadership continuity and club growth."
+        },
+        {
+          "role": "President",
+          "org": "Rotaract Club of Sukedhara",
+          "period": "Jul 2020 to Jun 2021",
+          "detail": "Led club operations and community service initiatives."
+        },
+        {
+          "role": "SAP Coordinator",
+          "org": "Rotaract Club of Sukedhara",
+          "period": "Jun 2019 to Dec 2020",
+          "detail": "Coordinated service projects and stakeholder engagement."
+        }
+      ]
+    },
+    {
+      "group": "Other Affiliations",
+      "groupSubtitle": "Training, advocacy and academic involvement",
+      "roles": [
+        {
+          "role": "Goodwill Ambassador",
+          "org": "The Asha Project Nepal",
+          "period": "Jan 2022 to Present",
+          "detail": "Advocating youth empowerment and social impact initiatives."
+        },
+        {
+          "role": "Member",
+          "org": "T.U. SEG Student Chapter",
+          "period": "Jul 2021 to Present",
+          "detail": "Society of Exploration Geophysicists. Academic and leadership activities."
+        },
+        {
+          "role": "Member",
+          "org": "Amnesty International",
+          "period": "Jan 2020 to Aug 2022",
+          "detail": "Supported human rights awareness and advocacy initiatives."
+        }
+      ]
+    }
+  ],
+  "certifications": {
+    "count": 20,
+    "featured": [
+      {
+        "title": "Professional Diploma in Business Models Development",
+        "issuer": "MTF Institute",
+        "date": "Jun 2025"
+      },
+      {
+        "title": "Professional Certificate in Project Management",
+        "issuer": "Udemy",
+        "date": "Mar 2025"
+      },
+      {
+        "title": "Public Speaking and Presentation Skills Masterclass",
+        "issuer": "Udemy",
+        "date": "Feb 2025"
+      },
+      {
+        "title": "Diploma in Event Management",
+        "issuer": "Oxford OHSC",
+        "date": "Feb 2025"
+      },
+      {
+        "title": "GIS Software & Application",
+        "issuer": "Udemy",
+        "date": "Jan 2025"
+      },
+      {
+        "title": "Diploma in Leadership & Management",
+        "issuer": "eLearning College",
+        "date": "Jan 2025"
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "file": "g-presidents-night-welcome.jpg",
+      "caption": "Rotaract 3292 President's Night, Nagarkot",
+      "tag": "Stage",
+      "size": "big"
+    },
+    {
+      "file": "g-district-budget-podium.jpg",
+      "caption": "Presenting the District 3292 budget, Nepal & Bhutan",
+      "tag": "Leadership",
+      "size": "tall"
+    },
+    {
+      "file": "g-sewing-classroom-full.jpg",
+      "caption": "Reusable sanitary pad enterprise training, full classroom",
+      "tag": "Field",
+      "size": "wide"
+    },
+    {
+      "file": "g-communication-skills.jpg",
+      "caption": "PETS-SETS Chitwan, addressing 150+ club leaders",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-mic-bluescreen.jpg",
+      "caption": "Guest session, panel discussion",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-appreciation-handoff.jpg",
+      "caption": "Handing over recognition to a community partner",
+      "tag": "Field",
+      "size": "wide"
+    },
+    {
+      "file": "g-vrindavan-podium.jpg",
+      "caption": "7th Installation Ceremony, Rotaract United Birgunj",
+      "tag": "Leadership",
+      "size": "normal"
+    },
+    {
+      "file": "g-podium-flowers-rotary.jpg",
+      "caption": "Addressing the room, Rotary International session",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-audience-seated-hall.jpg",
+      "caption": "Addressing a packed conference hall",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-backpacks-kids.jpg",
+      "caption": "Asha Nepal school supply distribution",
+      "tag": "Field",
+      "size": "tall"
+    },
+    {
+      "file": "g-school-groupphoto.jpg",
+      "caption": "Shree Secondary School Madhopur, MHM program",
+      "tag": "Field",
+      "size": "wide"
+    },
+    {
+      "file": "g-circle-sewing.jpg",
+      "caption": "Reusable pad-making circle, rural school",
+      "tag": "Field",
+      "size": "normal"
+    },
+    {
+      "file": "g-circle-fabric.jpg",
+      "caption": "Hands-on stitching demonstration",
+      "tag": "Field",
+      "size": "normal"
+    },
+    {
+      "file": "g-classroom-whiteboard.jpg",
+      "caption": "Field training session, community classroom",
+      "tag": "Field",
+      "size": "normal"
+    },
+    {
+      "file": "g-classroom-supplies.jpg",
+      "caption": "Setting up the day's training materials",
+      "tag": "Field",
+      "size": "normal"
+    },
+    {
+      "file": "g-classroom-professionals.jpg",
+      "caption": "Workshop session with young professionals",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-panel-laptops.jpg",
+      "caption": "Between sessions, district planning table",
+      "tag": "Leadership",
+      "size": "normal"
+    },
+    {
+      "file": "g-conference.jpg",
+      "caption": "18th Rotaract District Conference",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-installation.jpg",
+      "caption": "7th Club Installation Ceremony, Rotaract United Birgunj",
+      "tag": "Leadership",
+      "size": "wide"
+    },
+    {
+      "file": "g-audience.jpg",
+      "caption": "With the district leadership team",
+      "tag": "Leadership",
+      "size": "normal"
+    },
+    {
+      "file": "g-classroom1.jpg",
+      "caption": "MHM training circle, rural school",
+      "tag": "Field",
+      "size": "normal"
+    },
+    {
+      "file": "g-classroom2.jpg",
+      "caption": "WASH training session, rural Nepal",
+      "tag": "Field",
+      "size": "normal"
+    },
+    {
+      "file": "g-stage2.jpg",
+      "caption": "Speaking at 2nd PS Meet, Chitwan",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-stage-comm.jpg",
+      "caption": "Teaching communication skills, PETS-SETS Chitwan",
+      "tag": "Stage",
+      "size": "normal"
+    },
+    {
+      "file": "g-office.jpg",
+      "caption": "Planning the next program",
+      "tag": "Off Duty",
+      "size": "normal"
+    },
+    {
+      "file": "g-formal-stepandrepeat.jpg",
+      "caption": "District event, formal attire",
+      "tag": "Portrait",
+      "size": "tall"
+    },
+    {
+      "file": "g-entrance.jpg",
+      "caption": "District event, formal attire",
+      "tag": "Portrait",
+      "size": "normal"
+    },
+    {
+      "file": "g-poolside.jpg",
+      "caption": "Rotaract District 3292 polo",
+      "tag": "Portrait",
+      "size": "normal"
+    },
+    {
+      "file": "g-casual.jpg",
+      "caption": "Off duty",
+      "tag": "Portrait",
+      "size": "normal"
+    },
+    {
+      "file": "g-bungee.jpg",
+      "caption": "238m free fall, same nerves as walking on stage, faster",
+      "tag": "Off Duty",
+      "size": "wide"
+    },
+    {
+      "file": "g-trekking.jpg",
+      "caption": "Above the snowline. Fieldwork builds a habit of high places",
+      "tag": "Off Duty",
+      "size": "tall"
+    },
+    {
+      "file": "g-pokhara.jpg",
+      "caption": "Annapurna range, World Peace Pagoda, Pokhara",
+      "tag": "Off Duty",
+      "size": "normal"
+    },
+    {
+      "file": "g-shiva.jpg",
+      "caption": "At the Shiva statue, Pokhara",
+      "tag": "Off Duty",
+      "size": "normal"
+    },
+    {
+      "file": "g-pink-boat.jpg",
+      "caption": "Off the clock, Phewa Lake, Pokhara",
+      "tag": "Off Duty",
+      "size": "normal"
+    },
+    {
+      "file": "g-lake-arms-magenta.jpg",
+      "caption": "Wide open, somewhere with a view",
+      "tag": "Off Duty",
+      "size": "normal"
+    }
+  ],
+  "social": {
+    "email": "info@adhikarichandra.com.np",
+    "phone": "+977-9851301722",
+    "whatsapp": "https://wa.me/9779851301722",
+    "linkedin": "https://www.linkedin.com/in/adchandra",
+    "facebook": "https://www.facebook.com/adhi.rjn/",
+    "instagram": "https://www.instagram.com/c_.b_.a_"
+  }
+}

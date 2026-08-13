@@ -1,0 +1,28 @@
+.contact{background:var(--ink);padding-block:var(--sp6);}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--sp6);align-items:start;}
+.contact-info-body{font-size:.98rem;color:rgba(255,255,255,.68);line-height:1.7;margin-bottom:var(--sp4);max-width:42ch;}
+.contact-rows{display:flex;flex-direction:column;}
+.contact-row{padding:var(--sp2) 0;border-bottom:1px solid var(--ink-line);}
+.contact-row:last-child{border-bottom:none;}
+.contact-lbl{font-family:var(--font-mono);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--marigold);margin-bottom:.25em;}
+.contact-val{font-size:.97rem;font-weight:500;color:var(--text-on-dark);}
+.contact-val a:hover{color:var(--marigold);}
+.contact-social-row{display:flex;gap:.6em;margin-top:var(--sp4);}
+.contact-form-wrap{background:var(--ink-soft);border:1px solid var(--ink-line);border-radius:var(--r-lg);padding:var(--sp4);}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp2);}
+.field{display:flex;flex-direction:column;gap:.42em;margin-bottom:var(--sp2);}
+.field label{font-family:var(--font-mono);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);}
+.field input,.field select,.field textarea{background:rgba(255,255,255,.06);border:1px solid var(--ink-line);border-radius:var(--r-sm);padding:.78em 1em;color:var(--text-on-dark);font-family:var(--font-body);font-size:.95rem;transition:border-color .2s;}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.28);}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--marigold);outline:none;background:rgba(255,255,255,.09);}
+.field select option{background:var(--ink);}
+.field textarea{resize:vertical;min-height:120px;}
+.field-err{font-size:.78rem;color:#F1948A;}
+.form-submit{width:100%;justify-content:center;margin-top:var(--sp1);border:none;}
+.form-submit:disabled{opacity:.55;cursor:progress;}
+.form-success{text-align:center;padding:var(--sp5) var(--sp4);}
+.form-success-icon{font-size:3rem;margin-bottom:var(--sp2);}
+.form-success h3{font-family:var(--font-display);font-weight:800;font-size:1.5rem;text-transform:uppercase;color:var(--text-on-dark);margin-bottom:.4em;}
+.form-success p{color:rgba(255,255,255,.7);font-size:.95rem;}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:var(--sp4);}}
+@media(max-width:520px){.form-row-2{grid-template-columns:1fr;}.contact-form-wrap{padding:var(--sp3);}}

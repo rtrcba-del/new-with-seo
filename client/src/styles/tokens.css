@@ -1,0 +1,32 @@
+:root{
+  /* ── Brand palette (matches adhikarichandra.com.np) ── */
+  --ink:        #072D49;   /* navy-dark — primary dark bg */
+  --ink-soft:   #0A3D62;   /* navy — raised dark panels */
+  --ink-line:   #0D4F7C;   /* navy-mid — hairlines on dark */
+  --parchment:  #F4F6F8;   /* off-white — primary light bg */
+  --parchment-dim:#ECF0F3; /* grey-light */
+  --paper:      #FFFFFF;   /* white — card bg */
+  --marigold:   #E8272A;   /* red-bright — primary accent / CTA */
+  --marigold-dim:#C0392B;  /* red */
+  --crimson:    #1A6EA8;   /* blue — secondary accent */
+  --crimson-dim:#0D4F7C;   /* navy-mid */
+  --teal:       #5DADE2;   /* sky — tertiary accent */
+  --teal-dim:   #2E86C1;   /* blue-light */
+  --text-dark:  #1A252F;   /* dark-text */
+  --text-body:  #2C3E50;   /* body-text */
+  --text-mute:  #6C7A89;   /* grey-text */
+  --text-on-dark: #FFFFFF;
+  --text-on-dark-mute: rgba(255,255,255,.68);
+
+  /* ── Type (matches live site) ── */
+  --font-display:"Playfair Display","Georgia",serif;
+  --font-body:"Inter",-apple-system,sans-serif;
+  --font-mono:"Inter",-apple-system,sans-serif;
+
+  --sp1:.5rem; --sp2:1rem; --sp3:1.5rem; --sp4:2rem; --sp5:3rem; --sp6:4.5rem; --sp7:7rem;
+  --r-sm:4px; --r-md:8px; --r-lg:16px;
+  --shadow:0 2px 20px rgba(10,61,98,.10);
+  --shadow-lg:0 18px 50px rgba(10,61,98,.20);
+  --max-w:1240px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#15130F"/>
+  <path d="M16 20 L32 12 L48 20 L48 44 L32 52 L16 44 Z" fill="none" stroke="#E8A233" stroke-width="2.5"/>
+  <text x="32" y="40" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#EFE7D6" text-anchor="middle">CA</text>
+</svg>
