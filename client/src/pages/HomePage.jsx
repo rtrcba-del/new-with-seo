@@ -22,7 +22,7 @@ export default function HomePage({ profile, stats, capabilities, projects }) {
         <div className="container">
           <Reveal>
             <span className="sec-eyebrow sec-eyebrow--light">Selected Work</span>
-            <h2 className="sec-title-light">Three Case Files, Not A Résumé Line In Sight.</h2>
+            <h2 className="sec-title-light">Three Case Files, Not A Resume Line In Sight.</h2>
           </Reveal>
           <div className="teaser-grid">
             {preview.map((p, i) => (
