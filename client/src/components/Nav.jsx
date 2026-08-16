@@ -3,11 +3,14 @@ import { NavLink } from "react-router-dom";
 
 const LINKS = [
   { to: "/",           label: "Home" },
+  { to: "/about",      label: "About" },
+  { to: "/leadership", label: "Leadership" },
+  { to: "/experience", label: "Experience" },
   { to: "/projects",   label: "Projects" },
   { to: "/gallery",    label: "Gallery" },
-  { to: "/experience", label: "Experience" },
-  { to: "/leadership", label: "Leadership" },
-  { to: "/about",      label: "About" },
+  
+  
+  
 ];
 
 export default function Nav({ profile }) {
