@@ -45,7 +45,7 @@ export default function HomePage({ profile, stats, capabilities, projects }) {
       <section className="home-cta">
         <div className="container home-cta-inner">
           <Reveal>
-            <h2 className="sec-title-light">. LET'S TURN IDEAS INTO IMPACT.</h2>
+            <h2 className="sec-title-light"> LET'S TURN IDEAS INTO IMPACT.</h2>
             <p>Have an idea, opportunity, or partnership in mind? Let's make it happen.</p>
             <Link to="/contact" className="btn btn--marigold">Get In Touch</Link>
           </Reveal>
