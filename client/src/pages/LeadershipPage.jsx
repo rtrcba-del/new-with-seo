@@ -13,7 +13,7 @@ export default function LeadershipPage({ leadership }) {
       <PageHeader
         eyebrow="Roles & Responsibilities"
         title="Leadership History"
-        subtitle="Six years climbing from Sergeant-at-Arms to District Secretary."
+        subtitle="Seven years climbing from SAP Coordinator to District Secretary."
       />
       <Leadership leadership={leadership} embedded />
     </>
