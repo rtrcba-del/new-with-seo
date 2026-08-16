@@ -3,22 +3,22 @@
     "name": "Chandra Bhakta Adhikari",
     "shortName": "C.B. Adhikari",
     "title": "Program Manager & Strategic Partnerships",
-    "tagline": "From ideas to action, from connections to impact.",
+    "tagline": "I build the room, then give it a reason to act.",
     "availability": "Open to partnerships & speaking invitations",
     "location": "Bhaktapur, Nepal",
     "coordinates": "27.6710° N, 85.4298° E",
     "email": "info@adhikarichandra.com.np",
     "phone": "+977-9851301722",
     "whatsapp": "https://wa.me/9779851301722",
-    "birthplace": "Panchthar",
+    "birthplace": "Phidim, Panchthar",
     "education": "B.Sc. Geology, Tribhuvan University",
     "languages": [
       "Nepali",
       "English",
       "Hindi"
     ],
-    "summary": "Geologist by training, organiser by instinct. Five years turning national summits, disaster-response training and youth leadership into measurable movement across 62 districts, three countries, and one very full passport.",
-    "bioLong": "I started in the field, mapping ground, reading rock, standing in places most people only see on a relief map. That habit never left: I still show up in person, still walk the site before I trust the report. Somewhere between geological survey and a Rotaract podium, I found the actual job: getting NGOs, government offices, sponsors and communities to sit at the same table and leave with a plan. Nepal Business Summit, Rotaract District 3292, Asha Nepal's 29 schools, WASH campaigns in villages with no signal. Different rooms, same instinct.",
+    "summary": "Youth engagement and stakeholder-partnership professional with 5+ years building relationships with youth, colleges, NGOs and institutional partners across Nepal. Direct training and cultivation of 5,000+ youth across 10+ districts.",
+    "bioLong": "I build relationships that move people from first interest to real commitment. Five plus years bridging youth, colleges, NGOs, government and business across Nepal, leading participants through a full engagement funnel: outreach, motivation building, event conversion and follow through. That includes direct training and cultivation of 5,000+ youth across 10+ districts. I started in geology, mapping ground and reading rock, and that same habit of showing up in person carried straight into program management, stakeholder reporting and event delivery.",
     "positioning": [
       "Program Manager",
       "Strategic Partnerships",
@@ -44,21 +44,25 @@
     {
       "value": "30+",
       "unit": "Schools",
-      "label": "Education & community projects"
+      "label": "Direct field engagement"
     }
   ],
   "capabilities": [
     {
-      "word": "PROGRAM MANAGEMENT",
-      "note": "National summits to single-village trainings"
+      "word": "YOUTH & INSTITUTIONAL OUTREACH",
+      "note": "Colleges, youth networks, NGOs, government"
     },
     {
-      "word": "STRATEGIC PARTNERSHIPS",
+      "word": "STAKEHOLDER & PARTNERSHIP BUILDING",
       "note": "Sponsors, ministries, media, industry"
     },
     {
-      "word": "PUBLIC SPEAKING",
-      "note": "Keynotes, panels, district installations"
+      "word": "EVENT & PROGRAM MANAGEMENT",
+      "note": "National summits to single-village trainings"
+    },
+    {
+      "word": "TRAINING & PUBLIC SPEAKING",
+      "note": "Keynotes, panels, facilitation"
     },
     {
       "word": "GIS & GEOLOGY",
@@ -67,10 +71,6 @@
     {
       "word": "DISASTER RISK REDUCTION",
       "note": "Climate adaptation, WASH, MHM"
-    },
-    {
-      "word": "LEADERSHIP TRAINING",
-      "note": "5,000+ coached across 20+ districts"
     }
   ],
   "projects": [
@@ -130,14 +130,14 @@
       "role": "Rotary International's youth service arm, Nepal & Bhutan",
       "period": "Jul 2025 to Jun 2026",
       "stat": {
-        "value": "180+",
+        "value": "150+",
         "label": "Clubs coordinated across two countries"
       },
       "hero": "chandra-bhakta-adhikari-rotaract-district-3292.jpg",
       "dek": "Six years climbing from Sergeant-at-Arms to running district administration for one of Rotary's largest youth networks.",
-      "body": "District Secretary is the job where nothing is glamorous and everything has to work: governance, communication, records, and the connective tissue between 180-plus clubs across Nepal and Bhutan. I got here by doing the smaller jobs first: club president, SAP coordinator, assistant district secretary. Every rung taught the one that came after it.",
+      "body": "District Secretary is the job where nothing is glamorous and everything has to work: governance, communication, records, and the connective tissue between 150-plus clubs across Nepal and Bhutan. I got here by doing the smaller jobs first: club president, SAP coordinator, assistant district secretary. Every rung taught the one that came after it.",
       "highlights": [
-        "Administers district-wide communication and governance for 180+ Rotaract clubs",
+        "Administers district-wide communication and governance for 150+ Rotaract clubs",
         "Progressed through five leadership roles over six consecutive years",
         "Mentors club leadership as Adviser, Rotaract Club of Sukedhara"
       ],
@@ -153,24 +153,24 @@
       "id": "nbi-pm",
       "role": "Program Manager",
       "org": "Nepal Business Institute",
-      "period": "Sep 2025 to Present",
+      "period": "Nov 2025 to Present",
       "type": "Full-time",
-      "summary": "Leading planning and delivery of national programs: Nepal Business Summit & Youth Entrepreneurship Summit 2026.",
+      "summary": "Lead planning and delivery of national youth-entrepreneurship programs, directing outreach and cultivation with colleges, youth networks, sponsors and government stakeholders.",
       "tags": [
         "Program Management",
-        "Strategic Partnerships"
+        "Institutional Partnerships"
       ]
     },
     {
       "id": "nbi-po",
       "role": "Program Officer",
       "org": "Nepal Business Institute",
-      "period": "Oct 2024 to Sep 2025",
+      "period": "Oct 2024 to Nov 2025",
       "type": "Full-time",
-      "summary": "Coordinated both national summits end to end: sponsors, media, policymakers, logistics.",
+      "summary": "Coordinated Nepal Business Summit 2025 and Nepal Youth Entrepreneurship Summit 2025 end to end: recruitment, sponsors, media and policymakers.",
       "tags": [
         "Event Management",
-        "Marketing"
+        "Youth Recruitment"
       ]
     },
     {
@@ -179,7 +179,7 @@
       "org": "Asha Project Nepal",
       "period": "Jan 2019 to Present",
       "type": "Part-time",
-      "summary": "Overseeing delivery across 29 schools, 18 districts: education, sanitation, community development.",
+      "summary": "Overseeing education, sanitation and community-development activities across 18 districts and 29 schools, with stakeholder and donor reporting.",
       "tags": [
         "Project Management",
         "Donor Reporting"
@@ -187,14 +187,14 @@
     },
     {
       "id": "connection-trainer",
-      "role": "Trainer & Consultant",
-      "org": "Connection Nepal / Eco Connect",
+      "role": "Trainer (Consultant)",
+      "org": "Connection Nepal",
       "period": "2019 to Present",
       "type": "Consulting",
-      "summary": "DRR, climate adaptation, MHM & WASH training across 20+ districts.",
+      "summary": "Designing and delivering national training on Disaster Risk Reduction, Climate Change Adaptation, MHM and WASH. Trained 5,000+ youth, educators and community members across 10+ districts.",
       "tags": [
         "DRR Training",
-        "WASH",
+        "MHM & WASH",
         "Capacity Building"
       ]
     }
@@ -225,20 +225,20 @@
         {
           "role": "District Secretary",
           "org": "Rotaract District 3292",
-          "period": "Jul 2025 to Jun 2026",
-          "detail": "Leads district administration, communications and coordination across 150+ clubs."
+          "period": "2025 to 26",
+          "detail": "Lead district administration, communications and strategic planning for 150+ Rotaract clubs, aligning projects with Rotary's Areas of Focus and the UN SDGs."
         },
         {
           "role": "Assistant District Rotaract Representative",
           "org": "Rotaract District 3292",
-          "period": "Jun 2024 to Apr 2025",
-          "detail": "Supported leadership development, governance and national-level coordination."
+          "period": "2024 to 25",
+          "detail": "Mentored club presidents and secretaries on project planning, member retention and leadership growth. Coordinated national training seminars (RYTS, DRR Installation) and service campaigns."
         },
         {
           "role": "Assistant District Secretary",
           "org": "Rotaract District 3292",
-          "period": "Jul 2023 to Jun 2024",
-          "detail": "Managed district records and inter-club communication systems."
+          "period": "2023 to 24",
+          "detail": "Managed district records, reporting and communication between clubs and the district council."
         },
         {
           "role": "Sergeant-at-Arms",
@@ -557,5 +557,31 @@
     "linkedin": "https://www.linkedin.com/in/adchandra",
     "facebook": "https://www.facebook.com/adhi.rjn/",
     "instagram": "https://www.instagram.com/c_.b_.a_"
-  }
+  },
+  "awards": [
+    {
+      "title": "Outstanding Rotaract Project",
+      "org": "RI District 3292",
+      "period": "2019 to 20"
+    },
+    {
+      "title": "Outstanding Rotaract District Member",
+      "org": "RI District 3292",
+      "period": "2022 to 23 and 2023 to 24"
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Tulsi Maharjan",
+      "title": "PDG, RI District 7475 (USA); Founder, The Asha Project"
+    },
+    {
+      "name": "Mr. Sushil Kumar Karki",
+      "title": "Executive Director, Connection Nepal"
+    },
+    {
+      "name": "Mr. Bishal Gaire",
+      "title": "Executive Chairperson, Nepal Business Institute"
+    }
+  ]
 }

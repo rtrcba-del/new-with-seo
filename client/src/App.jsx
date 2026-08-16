@@ -38,7 +38,7 @@ export default function App() {
       .then(r => r.ok ? r.json() : null).then(d => { if (d) setVisitors(d.count); }).catch(()=>{});
   }, []);
 
-  const { profile, stats, capabilities, projects, experience, leadership, certifications, gallery, social } = content;
+  const { profile, stats, capabilities, projects, experience, leadership, certifications, gallery, social, awards, references } = content;
 
   return (
     <BrowserRouter>
@@ -50,9 +50,9 @@ export default function App() {
             <Route path="/" element={<HomePage profile={profile} stats={stats} capabilities={capabilities} projects={projects} />} />
             <Route path="/projects" element={<ProjectsPage projects={projects} />} />
             <Route path="/gallery" element={<GalleryPage gallery={gallery} />} />
-            <Route path="/experience" element={<ExperiencePage experience={experience} certifications={certifications} />} />
+            <Route path="/experience" element={<ExperiencePage experience={experience} certifications={certifications} awards={awards} />} />
             <Route path="/leadership" element={<LeadershipPage leadership={leadership} />} />
-            <Route path="/about" element={<AboutPage profile={profile} />} />
+            <Route path="/about" element={<AboutPage profile={profile} references={references} />} />
             <Route path="/contact" element={<ContactPage profile={profile} social={social} />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

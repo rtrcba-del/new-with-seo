@@ -1,19 +1,18 @@
 .home-teaser{background:var(--ink);padding-block:var(--sp6);}
 .teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp3);margin-top:var(--sp4);}
-.teaser-card{display:block;background:var(--ink-soft);border:1px solid var(--ink-line);border-radius:var(--r-md);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease);}
-.teaser-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.teaser-card{display:block;background:var(--ink-soft);border:1px solid var(--ink-line);border-radius:var(--r-md);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease);}
+.teaser-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--marigold);}
 .teaser-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .6s var(--ease);}
 .teaser-card:hover img{transform:scale(1.05);}
 .teaser-card-body{padding:var(--sp3);}
-.teaser-kicker{display:block;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--marigold);margin-bottom:.6em;}
+.teaser-kicker{display:block;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-on-dark-mute);margin-bottom:.6em;}
 .teaser-card-body h3{font-family:var(--font-display);font-weight:800;font-size:1.25rem;text-transform:uppercase;color:var(--text-on-dark);line-height:1.15;margin-bottom:.5em;}
 .teaser-card-body p{font-size:.88rem;color:var(--text-on-dark-mute);line-height:1.6;}
 .teaser-cta{display:flex;justify-content:center;margin-top:var(--sp5);}
 
-.home-cta{background:linear-gradient(120deg,var(--marigold) 0%,var(--marigold-dim) 100%);padding-block:var(--sp6);text-align:center;}
-.home-cta-inner h2{color:#fff;}
-.home-cta-inner p{font-size:1.05rem;color:rgba(255,255,255,.92);max-width:52ch;margin:0 auto var(--sp3);}
-.home-cta .btn--marigold{background:var(--ink);border-color:var(--ink);color:#fff;}
-.home-cta .btn--marigold:hover{background:#fff;border-color:#fff;color:var(--ink);}
+.home-cta{background:var(--ink);padding-block:var(--sp6);text-align:center;}
+.home-cta-inner h2{color:var(--text-on-dark);}
+.home-cta-inner p{font-size:1.05rem;color:var(--text-on-dark-mute);max-width:52ch;margin:0 auto var(--sp3);}
+.home-cta .btn--marigold:hover{background:var(--text-on-dark);border-color:var(--text-on-dark);color:var(--ink);}
 
 @media(max-width:860px){.teaser-grid{grid-template-columns:1fr;}}

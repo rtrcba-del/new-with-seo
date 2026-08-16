@@ -97,7 +97,7 @@ export default function Contact({ profile, social, embedded }) {
             <div className="form-success">
               <div className="form-success-icon">✅</div>
               <h3>Message Sent!</h3>
-              <p>Thanks for reaching out. Chandra will reply soon at <strong style={{color:"#5DADE2"}}>{profile?.email}</strong></p>
+              <p>Thanks for reaching out. Chandra will reply soon at <strong style={{color:"var(--crimson)"}}>{profile?.email}</strong></p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} noValidate>

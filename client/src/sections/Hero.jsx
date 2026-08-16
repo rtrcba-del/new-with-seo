@@ -4,7 +4,7 @@ export default function Hero({ profile }) {
   return (
     <section className="hero" id="top">
       <div className="hero-bg">
-        <img src="/images/chandra-bhakta-adhikari-keynote-rotaract-conference.jpg" alt="Chandra Bhakta Adhikari delivering a keynote at the Rotaract District Conference" fetchPriority="high" />
+        <img src="/images/chandra-bhakta-adhikari-portrait-lounge.jpg" alt="Chandra Bhakta Adhikari, Program Manager and Strategic Partnerships professional" fetchPriority="high" />
       </div>
       <div className="hero-scrim" />
       <div className="hero-frame" aria-hidden="true">
@@ -28,10 +28,7 @@ export default function Hero({ profile }) {
         <p className="hero-tagline">&ldquo;{profile?.tagline}&rdquo;</p>
 
         <div className="hero-btns">
-          <a className="btn btn--marigold" href="/chandra-cv.pdf" download="Chandra_Bhakta_Adhikari_CV.pdf">
-            Download CV
-          </a>
-          <Link className="btn btn--ghost" to="/contact">
+          <Link className="btn btn--marigold" to="/contact">
             Get In Touch
           </Link>
         </div>

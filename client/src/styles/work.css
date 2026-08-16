@@ -5,7 +5,7 @@
 .case--rev{direction:rtl;}
 .case--rev > *{direction:ltr;}
 
-.case-media{position:relative;border-radius:var(--r-md);overflow:hidden;box-shadow:0 24px 60px rgba(7,45,73,.4);}
+.case-media{position:relative;border-radius:var(--r-md);overflow:hidden;box-shadow:0 24px 60px rgba(11,48,72,.4);}
 .case-media img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .6s var(--ease);}
 .case:hover .case-media img{transform:scale(1.04);}
 .case-stat{position:absolute;left:0;bottom:0;background:var(--marigold);color:var(--ink);padding:1rem 1.3rem;max-width:70%;}
@@ -13,7 +13,7 @@
 .case-stat-label{display:block;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.03em;text-transform:uppercase;margin-top:.3em;}
 
 .case-copy{color:var(--text-on-dark);}
-.case-kicker{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--marigold);margin-bottom:.7em;}
+.case-kicker{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-on-dark-mute);margin-bottom:.7em;}
 .case-title{font-family:var(--font-display);font-weight:800;font-size:clamp(1.5rem,2.8vw,2.3rem);line-height:.98;letter-spacing:.01em;text-transform:uppercase;margin-bottom:.5em;}
 .case-role{font-family:var(--font-mono);font-size:.78rem;color:var(--text-on-dark-mute);margin-bottom:1.1em;}
 .case-dek{font-size:1.03rem;line-height:1.6;color:rgba(255,255,255,.86);margin-bottom:1.2em;}
@@ -25,7 +25,8 @@
 .case-highlights li{position:relative;padding-left:1.3em;font-size:.9rem;color:rgba(255,255,255,.8);line-height:1.55;}
 .case-highlights li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;background:var(--marigold);}
 
-.case-toggle{display:inline-flex;align-items:center;gap:.6em;font-family:var(--font-mono);font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--marigold);border-bottom:1.5px solid var(--marigold);padding-bottom:.2em;margin:.4em 0 1.4em;}
+.case-toggle{display:inline-flex;align-items:center;gap:.6em;font-family:var(--font-mono);font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6FA8D8;border-bottom:1.5px solid #6FA8D8;padding-bottom:.2em;margin:.4em 0 1.4em;transition:color .2s,border-color .2s;}
+.case-toggle:hover{color:var(--marigold);border-color:var(--marigold);}
 .case-toggle-icon{font-size:1rem;}
 
 .case-tags{display:flex;flex-wrap:wrap;gap:.5em;}

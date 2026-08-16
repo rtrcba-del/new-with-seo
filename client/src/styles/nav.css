@@ -1,5 +1,5 @@
 .nav{position:fixed;top:0;left:0;right:0;z-index:999;background:transparent;transition:background .3s,box-shadow .3s;}
-.nav.solid{background:var(--ink);box-shadow:0 2px 24px rgba(7,45,73,.35);}
+.nav.solid{background:var(--ink);box-shadow:0 2px 24px rgba(11,48,72,.35);}
 .nav-inner{max-width:var(--max-w);margin:0 auto;padding-inline:var(--sp4);height:64px;display:flex;align-items:center;justify-content:space-between;gap:var(--sp2);}
 .nav-mark{display:flex;flex-direction:column;flex-shrink:0;align-items:flex-start;}
 .nav-mark-initials{font-family:var(--font-display);font-weight:800;font-size:1.05rem;color:var(--text-on-dark);letter-spacing:.04em;}
@@ -14,7 +14,6 @@
 .nav-links a.active::after{transform:scaleX(1);}
 
 .nav-right{display:flex;align-items:center;gap:var(--sp2);flex-shrink:0;}
-.nav-cta-link{display:none;}
 .nav-cta{font-family:var(--font-mono);font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;background:var(--marigold);color:#fff;border:none;border-radius:var(--r-sm);padding:.65em 1.3em;cursor:pointer;transition:background .2s,transform .2s;white-space:nowrap;}
 .nav-cta:hover{background:var(--marigold-dim);transform:translateY(-1px);}
 

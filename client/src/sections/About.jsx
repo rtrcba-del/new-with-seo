@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal.jsx";
 
-export default function About({ profile, embedded }) {
+export default function About({ profile, references, embedded }) {
   return (
     <section className="about" id="about">
       <div className="container about-grid">
@@ -27,7 +27,7 @@ export default function About({ profile, embedded }) {
             <div><p className="about-fact-label">Birthplace</p><p className="about-fact-val">{profile?.birthplace}</p></div>
           </div>
           <div className="about-btns">
-            <a href="/chandra-cv.pdf" download="Chandra_Bhakta_Adhikari_CV.pdf" className="btn btn--marigold">
+            <a href="/chandra-bhakta-adhikari-resume.pdf" download="Chandra_Bhakta_Adhikari_Resume.pdf" className="btn btn--marigold">
               Download Full CV
             </a>
             <Link to="/experience" className="btn btn--ink">
@@ -36,6 +36,20 @@ export default function About({ profile, embedded }) {
           </div>
         </Reveal>
       </div>
+
+      {references?.length > 0 && (
+        <Reveal className="container about-refs" delay={200}>
+          <p className="about-refs-title">References available on request</p>
+          <div className="about-refs-row">
+            {references.map((r, i) => (
+              <div className="about-ref" key={i}>
+                <p className="about-ref-name">{r.name}</p>
+                <p className="about-ref-title">{r.title}</p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      )}
     </section>
   );
 }

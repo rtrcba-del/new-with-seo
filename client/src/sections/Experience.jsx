@@ -1,6 +1,6 @@
 import Reveal from "../components/Reveal.jsx";
 
-export default function Experience({ experience, certifications, embedded }) {
+export default function Experience({ experience, certifications, awards, embedded }) {
   return (
     <section className="exp" id="experience">
       <div className="container">
@@ -37,6 +37,20 @@ export default function Experience({ experience, certifications, embedded }) {
                 <div className="cert-chip" key={i}>
                   <span className="cert-chip-title">{c.title}</span>
                   <span className="cert-chip-meta">{c.issuer} &middot; {c.date}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {awards?.length > 0 && (
+          <div className="cert-strip">
+            <p className="cert-strip-title">Awards &amp; Recognition</p>
+            <div className="cert-strip-row">
+              {awards.map((a, i) => (
+                <div className="cert-chip cert-chip--award" key={i}>
+                  <span className="cert-chip-title">{a.title}</span>
+                  <span className="cert-chip-meta">{a.org} &middot; {a.period}</span>
                 </div>
               ))}
             </div>

@@ -3,12 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const LINKS = [
   { to: "/",           label: "Home" },
-  { to: "/about",      label: "About" },
-  { to: "/experience", label: "Experience" },
-  { to: "/leadership", label: "Leadership" },
   { to: "/projects",   label: "Projects" },
   { to: "/gallery",    label: "Gallery" },
-
+  { to: "/experience", label: "Experience" },
+  { to: "/leadership", label: "Leadership" },
+  { to: "/about",      label: "About" },
 ];
 
 export default function Nav({ profile }) {
@@ -43,8 +42,7 @@ export default function Nav({ profile }) {
           </nav>
 
           <div className="nav-right">
-            <NavLink to="/contact" className={({isActive}) => `nav-cta-link ${isActive ? "active" : ""}`}>Contact</NavLink>
-            <a className="nav-cta" href="/chandra-cv.pdf" download="Chandra_Bhakta_Adhikari_CV.pdf">Download CV</a>
+            <NavLink className="nav-cta" to="/contact">Get In Touch</NavLink>
           </div>
 
           <button className={`nav-toggle ${open ? "open" : ""}`} onClick={() => setOpen(v=>!v)} aria-label="Toggle menu">
@@ -59,10 +57,9 @@ export default function Nav({ profile }) {
             {l.label}
           </NavLink>
         ))}
-        <NavLink to="/contact" onClick={close} className={({isActive}) => isActive ? "active" : ""}>Contact</NavLink>
-        <a className="nav-cta" style={{marginTop:"1.2rem"}} href="/chandra-cv.pdf" download="Chandra_Bhakta_Adhikari_CV.pdf" onClick={close}>
-          Download CV
-        </a>
+        <NavLink to="/contact" onClick={close} className={({isActive}) => `nav-cta ${isActive ? "active" : ""}`} style={{marginTop:"1.2rem"}}>
+          Get In Touch
+        </NavLink>
       </div>
     </>
   );

@@ -1,22 +1,27 @@
 :root{
-  /* ── Brand palette (matches adhikarichandra.com.np) ── */
-  --ink:        #072D49;   /* navy-dark — primary dark bg */
-  --ink-soft:   #0A3D62;   /* navy — raised dark panels */
-  --ink-line:   #0D4F7C;   /* navy-mid — hairlines on dark */
-  --parchment:  #F4F6F8;   /* off-white — primary light bg */
-  --parchment-dim:#ECF0F3; /* grey-light */
+  /* ── Brand palette (refined per color audit) ── */
+  --ink:        #0B3048;   /* primary deep navy — header, footer, hero overlay, dark sections */
+  --ink-soft:   #123F5D;   /* secondary navy — raised panels within dark sections */
+  --ink-footer-bottom:#08263A; /* darkest navy — footer copyright bar */
+  --ink-line:   rgba(255,255,255,.14); /* hairlines on dark backgrounds */
+
+  --parchment:  #F5F6F7;   /* warm light neutral — primary light bg */
+  --parchment-dim:#DCE2E7; /* subtle borders on light bg */
   --paper:      #FFFFFF;   /* white — card bg */
-  --marigold:   #E8272A;   /* red-bright — primary accent / CTA */
-  --marigold-dim:#C0392B;  /* red */
-  --crimson:    #1A6EA8;   /* blue — secondary accent */
-  --crimson-dim:#0D4F7C;   /* navy-mid */
-  --teal:       #5DADE2;   /* sky — tertiary accent */
-  --teal-dim:   #2E86C1;   /* blue-light */
-  --text-dark:  #1A252F;   /* dark-text */
-  --text-body:  #2C3E50;   /* body-text */
-  --text-mute:  #6C7A89;   /* grey-text */
+
+  --marigold:   #E53935;   /* coral red — signature accent: CTAs, active state, highlights only */
+  --marigold-dim:#C92F2C;  /* coral red hover */
+  --crimson:    #1261A0;   /* muted blue — informational accent: links, labels, numbers */
+  --crimson-dim:#0B5A8A;   /* muted blue, alt shade */
+  --teal:       #1261A0;   /* alias of muted blue, used for small chip borders */
+  --teal-dim:   #0B5A8A;
+
+  --text-dark:  #172331;   /* navy-charcoal — headings, primary text */
+  --text-body:  #667585;   /* muted blue-gray — descriptions, paragraph copy */
+  --text-mute:  #8997A3;   /* lighter muted — meta labels, placeholders */
   --text-on-dark: #FFFFFF;
-  --text-on-dark-mute: rgba(255,255,255,.68);
+  --text-on-dark-mute: #D9E2E8; /* nav text, stat labels, on-dark secondary text */
+  --hero-subtle: #E5EBEF;  /* hero subtitle / quote on the photographic hero */
 
   /* ── Type (matches live site) ── */
   --font-display:"Playfair Display","Georgia",serif;
@@ -25,8 +30,8 @@
 
   --sp1:.5rem; --sp2:1rem; --sp3:1.5rem; --sp4:2rem; --sp5:3rem; --sp6:4.5rem; --sp7:7rem;
   --r-sm:4px; --r-md:8px; --r-lg:16px;
-  --shadow:0 2px 20px rgba(10,61,98,.10);
-  --shadow-lg:0 18px 50px rgba(10,61,98,.20);
+  --shadow:0 2px 20px rgba(11,48,72,.10);
+  --shadow-lg:0 18px 50px rgba(11,48,72,.20);
   --max-w:1240px;
   --ease:cubic-bezier(.22,.61,.36,1);
 }

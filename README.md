@@ -1,7 +1,26 @@
 # Chandra Bhakta Adhikari — Portfolio
 
 Multi-page React (Vite) site + Express API. Brand: Playfair Display (headings) + Inter (body),
-navy/blue/red-bright, matching adhikarichandra.com.np.
+refined navy/muted-blue/coral-red palette per a professional color audit.
+
+## Latest revision (this build)
+- **Content** rewritten from the updated resume: professional summary, all four experience
+  entries (dates, roles, responsibilities), core competencies mapped into the capabilities
+  section, stats updated (5+ Years / 5K+ People / 62 Districts / 30+ Schools), and two new
+  sections added: **Awards & Recognition** (Experience page) and **References** (About page,
+  names/titles only — phone numbers and personal emails of the three referenced individuals
+  were deliberately left off the public site; add them yourself if you have their consent).
+- **Hero photo replaced** with the new lounge portrait.
+- **CV download**: removed from the header and hero (per request, so it doesn't compete with
+  the on-site content), and reinstated as a single clear "Download Full CV" action on the About
+  page, now linking to the newly supplied resume PDF
+  (`client/public/chandra-bhakta-adhikari-resume.pdf`).
+- **Full color system refined** per a detailed brand audit: navy (`#0B3048`) is now the
+  dominant color across header/footer/hero-overlay/stats/CTA sections; coral red (`#E53935`) is
+  reserved for buttons, active nav state, and small accents; a muted blue (`#1261A0`) handles
+  informational elements (links, section labels, numbers). The statistics bar and the closing
+  CTA section both moved from a red background to navy, and the contact form is now a white
+  card with navy text sitting on the dark contact section, per the audit's form spec.
 
 ## Structure
 - `client/` — React app. Real routes (not hash routes, so Google can index each page on its own

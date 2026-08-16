@@ -12,7 +12,9 @@
 .cert-strip{margin-top:var(--sp5);border-top:1.5px dashed var(--text-mute);padding-top:var(--sp3);}
 .cert-strip-title{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mute);margin-bottom:var(--sp2);}
 .cert-strip-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp2);}
-.cert-chip{background:var(--paper);border:1px solid var(--parchment-dim);border-radius:var(--r-sm);padding:.9rem 1rem;}
+.cert-chip{background:var(--paper);border:1px solid var(--parchment-dim);border-radius:var(--r-sm);padding:.9rem 1rem;transition:border-color .2s;}
+.cert-chip:hover{border-color:var(--marigold);}
+.cert-chip--award{border-left:3px solid var(--marigold);}
 .cert-chip-title{display:block;font-size:.83rem;font-weight:600;color:var(--text-dark);line-height:1.35;margin-bottom:.3em;}
 .cert-chip-meta{display:block;font-family:var(--font-mono);font-size:.66rem;color:var(--text-mute);text-transform:uppercase;letter-spacing:.03em;}
 
