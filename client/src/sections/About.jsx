@@ -28,7 +28,7 @@ export default function About({ profile, references, embedded }) {
           </div>
           <div className="about-btns">
             <a href="/chandra-bhakta-adhikari-resume.pdf" download="Chandra_Bhakta_Adhikari_Resume.pdf" className="btn btn--marigold">
-              Download Full CV
+              View Full CV
             </a>
             <Link to="/experience" className="btn btn--ink">
               View Experience
