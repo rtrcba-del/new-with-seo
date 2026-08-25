@@ -44,7 +44,7 @@ export default function Leadership({ leadership, embedded }) {
           <div className="lead-photo-col">
             <div className="lead-photo">
               <img src="/images/chandra-bhakta-adhikari-rotaract-installation-ceremony.jpg" alt="Chandra Bhakta Adhikari speaking at the 7th Rotaract Club Installation Ceremony" loading="lazy" />
-              <p className="lead-photo-cap">7th Installation Ceremony, Rotaract United Birgunj</p>
+              <p className="lead-photo-cap"></p>
             </div>
           </div>
           <div>

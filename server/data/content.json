@@ -341,7 +341,7 @@
   "gallery": [
     {
       "file": "g-presidents-night-welcome.jpg",
-      "caption": "Rotaract 3292 President's Night, Nagarkot",
+      "caption": 
       "tag": "Stage",
       "size": "big"
     },
@@ -377,7 +377,7 @@
     },
     {
       "file": "g-vrindavan-podium.jpg",
-      "caption": "7th Installation Ceremony, Rotaract United Birgunj",
+      "caption": "",
       "tag": "Leadership",
       "size": "normal"
     },
