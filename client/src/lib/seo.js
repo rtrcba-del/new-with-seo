@@ -25,6 +25,66 @@ function setLink(rel, href) {
   el.setAttribute("href", href);
 }
 
+function setJsonLd(id, data) {
+  let el = document.getElementById(id);
+  if (!data) {
+    if (el) el.remove();
+    return;
+  }
+  if (!el) {
+    el = document.createElement("script");
+    el.type = "application/ld+json";
+    el.id = id;
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
+function breadcrumbLD(path) {
+  const segments = path.split("/").filter(Boolean);
+  const items = [{ name: "Home", path: "/" }];
+  let acc = "";
+  for (const seg of segments) {
+    acc += `/${seg}`;
+    items.push({ name: seg.charAt(0).toUpperCase() + seg.slice(1), path: acc });
+  }
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: `${SITE_URL}${item.path}`,
+    })),
+  };
+}
+
+function faqLD(profile) {
+  const name = profile?.name || SITE_NAME;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `Who is ${name}?`,
+        acceptedAnswer: { "@type": "Answer", text: `${name} is a Nepal-based Program Manager and Strategic Partnerships professional. ${profile?.summary || ""}` },
+      },
+      {
+        "@type": "Question",
+        name: `Where is ${name} based?`,
+        acceptedAnswer: { "@type": "Answer", text: `He is based in ${profile?.location || "Bhaktapur, Nepal"}.` },
+      },
+      {
+        "@type": "Question",
+        name: `How can I contact ${name}?`,
+        acceptedAnswer: { "@type": "Answer", text: `Via the contact page${profile?.email ? `, or by email at ${profile.email}` : ""}.` },
+      },
+    ],
+  };
+}
+
 /**
  * Applies per-page title, description, canonical URL and social meta.
  * Runs on every route change. Since this is a client-rendered SPA, the very
@@ -34,7 +94,7 @@ function setLink(rel, href) {
  * non-JS scrapers (some link-preview bots) see. For guaranteed non-JS
  * previews per page, a prerender/SSR step would be the next upgrade.
  */
-export function useSEO({ title, description, path = "/", noindex = false, image }) {
+export function useSEO({ title, description, path = "/", noindex = false, image, faqProfile }) {
   useEffect(() => {
     const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} | Program Manager & Strategic Partnerships`;
     const url = `${SITE_URL}${path}`;
@@ -57,5 +117,10 @@ export function useSEO({ title, description, path = "/", noindex = false, image 
     setMeta("name", "twitter:title", fullTitle);
     setMeta("name", "twitter:description", desc);
     setMeta("name", "twitter:image", img);
-  }, [title, description, path, noindex, image]);
+
+    // Breadcrumb schema on every page; FAQPage schema only where the page
+    // actually renders matching visible Q&A content (see sections/FAQ.jsx).
+    setJsonLd("ld-breadcrumb", breadcrumbLD(path));
+    setJsonLd("ld-faq", faqProfile ? faqLD(faqProfile) : null);
+  }, [title, description, path, noindex, image, faqProfile]);
 }

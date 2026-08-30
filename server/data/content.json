@@ -1,9 +1,9 @@
 {
   "profile": {
     "name": "Chandra Bhakta Adhikari",
-    "shortName": "Chandra Adhikari",
+    "shortName": "C.B. Adhikari",
     "title": "Program Manager & Strategic Partnerships",
-    "tagline": "From ideas to action, from connections to impact.",
+    "tagline": "Building connections. Creating opportunities. Driving meaningful impact.",
     "availability": "Open to partnerships & speaking invitations",
     "location": "Bhaktapur, Nepal",
     "coordinates": "27.6710° N, 85.4298° E",
@@ -341,7 +341,7 @@
   "gallery": [
     {
       "file": "g-presidents-night-welcome.jpg",
-      "caption": 
+      "caption": "Rotaract 3292 President's Night, Nagarkot",
       "tag": "Stage",
       "size": "big"
     },
@@ -377,7 +377,6 @@
     },
     {
       "file": "g-vrindavan-podium.jpg",
-      "caption": "",
       "tag": "Leadership",
       "size": "normal"
     },
@@ -551,6 +550,7 @@
     }
   ],
   "social": {
+    "email": "info@adhikarichandra.com.np",
     "email": "hello@adhikarichandra.com.np",
     "phone": "+977-9851301722",
     "whatsapp": "https://wa.me/9779851301722",

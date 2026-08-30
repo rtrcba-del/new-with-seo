@@ -1,0 +1,11 @@
+node_modules/
+dist/.vite/
+*.log
+
+# Full-resolution originals backed up here before the images in
+# client/public/images/ were resized/recompressed for web delivery — see
+# README "Performance" section. Deliberately not committed: keeping 33MB of
+# camera-resolution originals in git defeats the point of shrinking the
+# served copies, and these should live in private storage instead (a private
+# cloud bucket, an external drive, etc.), not in the public web repo.
+originals-backup/

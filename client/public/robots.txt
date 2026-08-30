@@ -1,4 +1,60 @@
+# adhikarichandra.com.np
+# Standard search engines: fully open.
 User-agent: *
 Allow: /
+
+# Answer-engine / AI crawlers used for Generative Engine Optimization (GEO)
+# and LLM-based answer/citation surfaces. Explicitly allowed so this site can
+# be retrieved, indexed and cited by AI Overviews, ChatGPT, Gemini,
+# Perplexity, Copilot and similar assistants.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Note: robots.txt is an honor-system convention — well-behaved crawlers
+# (including all of the above) respect it, but it is not a security control.
+# Abusive/undeclared scrapers are handled separately via server-side rate
+# limiting and hotlink protection (see server/index.js), not via robots.txt.
 
 Sitemap: https://adhikarichandra.com.np/sitemap.xml
