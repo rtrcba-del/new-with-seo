@@ -151,11 +151,11 @@ app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
 /* ── Serve built frontend, with per-route SEO/GEO HTML injection ──
  * For each known route, rewrite the shipped index.html's <title>, meta
- * description/canonical/OG/Twitter tags, add BreadcrumbList (+ FAQPage on
- * /about) JSON-LD, and inject a short crawlable text snapshot of the page's
- * real content. This is what makes the page legible to AI/answer-engine
- * crawlers that fetch raw HTML and never execute the JS bundle — see
- * seo-meta.js for the full rationale. */
+ * description/canonical/OG/Twitter tags, add BreadcrumbList JSON-LD, and
+ * inject a short crawlable text snapshot of the page's real content. This
+ * is what makes the page legible to AI/answer-engine crawlers that fetch
+ * raw HTML and never execute the JS bundle — see seo-meta.js for the full
+ * rationale. */
 const dist = path.join(__dirname, "../client/dist");
 const indexHtmlPath = path.join(dist, "index.html");
 let indexHtmlTemplate = null;

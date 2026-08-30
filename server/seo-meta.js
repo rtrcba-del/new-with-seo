@@ -91,50 +91,6 @@ function breadcrumbLD(items) {
   };
 }
 
-// FAQPage schema. Matches the visible FAQ block rendered on the About page
-// (client/src/sections/About.jsx) — required for FAQ schema to be honored by
-// Google and to be trustworthy/citable for AI answer engines.
-function faqLD(profile) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Who is Chandra Bhakta Adhikari?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${profile?.name || SITE_NAME} is a Nepal-based Program Manager and Strategic Partnerships professional with ${profile?.summary || "over five years of experience building relationships with youth, colleges, NGOs and institutional partners across Nepal."}`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Where is Chandra Bhakta Adhikari based?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `He is based in ${profile?.location || "Bhaktapur, Nepal"}.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What does Chandra Bhakta Adhikari work on?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Program management, strategic partnerships, youth leadership, entrepreneurship, stakeholder engagement, community development, and disaster risk reduction (DRR/MHM/WASH) training across Nepal.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How can I contact Chandra Bhakta Adhikari?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Via the contact form at ${SITE_URL}/contact, or by email${profile?.email ? ` at ${profile.email}` : ""}.`,
-        },
-      },
-    ],
-  };
-}
-
 /**
  * Renders a short, honest, text-only snapshot of a route's real content.
  * Deliberately uses <p>/<ul> only (no headings) so it never introduces a
@@ -197,7 +153,6 @@ export function renderRouteHTML(routePath, content, nonce = "") {
   const image = DEFAULT_IMAGE;
 
   const jsonLdBlocks = [breadcrumbLD(meta.breadcrumb)];
-  if (routePath === "/about") jsonLdBlocks.push(faqLD(content?.profile));
 
   const headReplacements = {
     title: esc(fullTitle),

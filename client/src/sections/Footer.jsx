@@ -31,11 +31,7 @@ export default function Footer({ profile, social, visitors }) {
       </div>
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
-          <p className="footer-copy">
-            © {year} {profile?.name}. All rights reserved. Unauthorized reproduction, redistribution,
-            or use of this site's text, photographs, or design is prohibited without prior written
-            permission.
-          </p>
+          <p className="footer-copy">© {year} {profile?.name}. All rights reserved.</p>
           <button className="footer-bottom-link" onClick={top}>↑ Back to top</button>
         </div>
       </div>

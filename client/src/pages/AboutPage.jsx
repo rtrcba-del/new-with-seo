@@ -7,7 +7,6 @@ export default function AboutPage({ profile, references }) {
     title: "About",
     description: "About Chandra Bhakta Adhikari: geologist by training, Program Manager and Strategic Partnerships professional based in Bhaktapur, Nepal.",
     path: "/about",
-    faqProfile: profile,
   });
   return (
     <>
@@ -16,7 +15,6 @@ export default function AboutPage({ profile, references }) {
         title="About"
       />
       <About profile={profile} references={references} embedded />
-      <FAQ profile={profile} />
     </>
   );
 }
