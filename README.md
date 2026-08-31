@@ -228,14 +228,13 @@ accessibility.
   break copying your own email/phone number, password managers, and
   screen-reader/translation tooling for every visitor, for a deterrent a
   determined person bypasses in one click anyway (dev tools, screenshots).
-- **Watermark badge** (`adhikarichandra.com.np`) overlaid via JS on every
-  original portfolio/gallery photo (hero, about portrait, leadership photo,
-  project case-file images, gallery grid + lightbox) — implemented as an
-  injected element rather than CSS `::after`, since some of those containers
-  already use `::after` for their own design (the About photo's marigold
-  border), and an element can only have one. Non-destructive: the actual
-  image files, `alt` text, and file sizes are untouched, so this has zero
-  SEO cost.
+- **No visible watermark**: an earlier revision overlaid a small
+  `adhikarichandra.com.np` badge on every portfolio/gallery photo; removed
+  by request. Image protection is now purely behavioral (blocked
+  drag/right-click-save, above) rather than visual — the images themselves,
+  their `alt` text, and file sizes remain untouched either way. Server-side
+  hotlink protection (blocking other sites from embedding these images
+  directly) still applies regardless of this and is unaffected.
 - **Expanded footer copyright notice** with a full rights-reserved statement
   (dynamic year, already existed; the statement itself is new).
 - **Production build now strips `console`/`debugger` statements**
@@ -315,6 +314,16 @@ Certification data lives in `certifications.items` in `content.json` (both
 copies). To add a new certificate, append an object with `title`, `issuer`,
 `date` (e.g. `"Mar 2026"`), `monthKey` (e.g. `"2026-03"`, used for grouping/
 sorting — keep this in `YYYY-MM` format), `credentialId`, and `url`.
+
+## Leadership page (this revision)
+Clicking an organization name in the Leadership History list now swaps the
+portrait photo next to it (with a crossfade/scale-in animation) to a photo
+relevant to that organization, and highlights the selected row with a
+marigold outline — previously the photo was static regardless of which
+organization was open. Each group's image lives in `content.json` under
+`leadership[].image` / `leadership[].imageAlt`; add those two fields to any
+new group you add, or it falls back to the original installation-ceremony
+photo.
 
 ## Gallery
 

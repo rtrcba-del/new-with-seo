@@ -1,36 +1,14 @@
 /*
-  Content protection: image watermark badge + scoped text-selection lock.
+  Content protection (visual watermark removed by request).
 
-  The watermark is a real element (.wm-badge, injected by lib/protect.js)
-  rather than a ::after pseudo-element, because several of these same
-  containers (e.g. .about-photo-wrap) already use ::after for their own
-  design details (the marigold border) — a second ::after rule would
-  silently replace it since an element can only have one ::after.
-
-  Scoped, not global: only original portfolio/gallery photo containers get
-  the watermark, and only the small caption labels on top of those photos
-  have selection disabled — never body copy, contact details, or form
-  fields, since site-wide user-select:none breaks copy/paste of useful
-  info and creates an accessibility gap for translation/assistive tools.
+  What remains here is unrelated to the watermark: just a small, scoped
+  text-selection lock on photo caption labels (never body copy, contact
+  details, or form fields — site-wide user-select:none would break
+  copy/paste of useful info and create an accessibility gap for
+  translation/assistive tools). The actual protective behavior — blocking
+  image drag/right-click-save — lives in lib/protect.js, and server-side
+  hotlink protection (server/index.js) is unaffected by any of this.
 */
-
-.wm-badge {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 3px 9px;
-  font-family: "Inter", sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.85);
-  background: rgba(7, 45, 73, 0.45);
-  border-radius: 4px;
-  pointer-events: none;
-  z-index: 3;
-  user-select: none;
-  white-space: nowrap;
-}
 
 .g-tag,
 .g-cap,

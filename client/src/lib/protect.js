@@ -10,37 +10,14 @@
  *  - claim to make images "impossible" to copy — screenshots always work,
  *    and no client-side script can prevent that. This only discourages the
  *    one-click "save image as" / drag-out path.
+ *
+ * No visible watermark badge is added to images (removed by request) — the
+ * protection here is purely behavioral (blocked drag/right-click), not
+ * visual. Server-side hotlink protection (server/index.js) still applies
+ * regardless of this file.
  */
-// Containers that wrap an original portfolio/gallery photo. Kept in sync
-// with the classnames used in Hero.jsx, About.jsx, Leadership.jsx,
-// Projects.jsx and Gallery.jsx.
-const WATERMARK_SELECTORS = [
-  ".hero-bg", ".about-photo-wrap", ".lead-photo", ".case-media", ".g-item", ".lb-fig",
-];
-
-function applyWatermarks() {
-  for (const sel of WATERMARK_SELECTORS) {
-    document.querySelectorAll(sel).forEach((el) => {
-      if (el.querySelector(":scope > .wm-badge")) return;
-      if (getComputedStyle(el).position === "static") el.style.position = "relative";
-      const badge = document.createElement("span");
-      badge.className = "wm-badge";
-      badge.setAttribute("aria-hidden", "true");
-      badge.textContent = "adhikarichandra.com.np";
-      el.appendChild(badge);
-    });
-  }
-}
-
 export function initContentProtection() {
   if (typeof window === "undefined" || typeof document === "undefined") return;
-
-  // Apply on load, then keep re-applying as React mounts/unmounts pages
-  // (route changes swap DOM nodes, so watermark badges need reattaching).
-  applyWatermarks();
-  const root = document.getElementById("root") || document.body;
-  const observer = new MutationObserver(() => applyWatermarks());
-  observer.observe(root, { childList: true, subtree: true });
 
   let toastTimer = null;
   function showNotice(message) {

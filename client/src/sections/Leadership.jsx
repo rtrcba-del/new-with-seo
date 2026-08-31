@@ -1,11 +1,15 @@
 import { useState } from "react";
 import Reveal from "../components/Reveal.jsx";
 
-function LeadGroup({ group, defaultOpen, delay }) {
-  const [open, setOpen] = useState(defaultOpen);
+function LeadGroup({ group, isActive, isOpen, onSelect, delay }) {
   return (
-    <Reveal as="div" className={`lead-group ${open ? "open" : ""}`} delay={delay}>
-      <button className="lead-group-hdr" onClick={() => setOpen(v => !v)} aria-expanded={open}>
+    <Reveal as="div" className={`lead-group ${isOpen ? "open" : ""} ${isActive ? "active" : ""}`} delay={delay}>
+      <button
+        className="lead-group-hdr"
+        onClick={() => onSelect()}
+        aria-expanded={isOpen}
+        aria-pressed={isActive}
+      >
         <div>
           <p className="lead-group-name">{group.group}</p>
           <p className="lead-group-sub">{group.groupSubtitle}</p>
@@ -36,15 +40,28 @@ function LeadGroup({ group, defaultOpen, delay }) {
   );
 }
 
+const FALLBACK_IMAGE = "/images/chandra-bhakta-adhikari-rotaract-installation-ceremony.jpg";
+const FALLBACK_ALT = "Chandra Bhakta Adhikari speaking at the 7th Rotaract Club Installation Ceremony";
+
 export default function Leadership({ leadership, embedded }) {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const active = leadership?.[activeIdx];
+
   return (
     <section className="lead" id="leadership">
       <div className="container">
         <div className="lead-layout">
           <div className="lead-photo-col">
-            <div className="lead-photo">
-              <img src="/images/chandra-bhakta-adhikari-rotaract-installation-ceremony.jpg" alt="Chandra Bhakta Adhikari speaking at the 7th Rotaract Club Installation Ceremony" loading="lazy" />
-              <p className="lead-photo-cap"></p>
+            {/* key={activeIdx} forces a remount on selection, which re-runs
+                the CSS entrance animation below for a clean crossfade
+                between organizations. */}
+            <div className="lead-photo" key={activeIdx}>
+              <img
+                src={active?.image || FALLBACK_IMAGE}
+                alt={active?.imageAlt || FALLBACK_ALT}
+                loading="lazy"
+              />
+              <p className="lead-photo-cap">{active?.group}</p>
             </div>
           </div>
           <div>
@@ -56,7 +73,14 @@ export default function Leadership({ leadership, embedded }) {
             )}
             <div className="lead-groups">
               {leadership?.map((group, i) => (
-                <LeadGroup key={group.group} group={group} defaultOpen={i === 0} delay={i * 70} />
+                <LeadGroup
+                  key={group.group}
+                  group={group}
+                  isActive={i === activeIdx}
+                  isOpen={i === activeIdx}
+                  onSelect={() => setActiveIdx(i)}
+                  delay={i * 70}
+                />
               ))}
             </div>
           </div>
