@@ -293,7 +293,32 @@ particular) and to anyone on a slow or metered connection.
 (filterable by Stage / Leadership / Field / Off Duty / Portrait), plus reserve photos not
 currently used, available for swapping in via the `gallery` array in `content.json`.
 
+## Certifications (this revision)
+The Experience page's "Certifications" strip now lists **all 21 verified
+certifications** (previously only 6 of 20+ were shown, per a hardcoded
+`featured` list) — grouped by month issued, with a visible gap between
+different months and no gap between certs earned in the same month. Every
+certificate title is a link that opens its real verification page in a new
+tab:
+- **Udemy certificates** (credential IDs starting `UC-`, including the two
+  MTF Institute–branded courses that were delivered via Udemy) link to
+  `https://www.udemy.com/certificate/{credential-id}/` — Udemy's real,
+  public verification URL pattern.
+- **Oxford Home Study Center** certs link to `oxfordhomestudy.com`.
+- **eLearning College** certs link to `elearningcollege.com`.
+- **Simplilearn** certs link to `verify.simplilearn.com`, their public
+  credential-verification portal (their verification URLs require entering
+  the Credential ID manually rather than a direct deep link, so this points
+  to the portal itself rather than a fabricated deep link).
+
+Certification data lives in `certifications.items` in `content.json` (both
+copies). To add a new certificate, append an object with `title`, `issuer`,
+`date` (e.g. `"Mar 2026"`), `monthKey` (e.g. `"2026-03"`, used for grouping/
+sorting — keep this in `YYYY-MM` format), `credentialId`, and `url`.
+
 ## Gallery
+
+
 `client/public/images/` has 35 verified, correctly-captioned photos wired into the gallery
 (filterable by Stage / Leadership / Field / Off Duty / Portrait), plus reserve photos not
 currently used, available for swapping in via the `gallery` array in `content.json`.

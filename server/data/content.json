@@ -304,37 +304,175 @@
     }
   ],
   "certifications": {
-    "count": 20,
-    "featured": [
+    "count": 21,
+    "items": [
       {
         "title": "Professional Diploma in Business Models Development",
         "issuer": "MTF Institute",
-        "date": "Jun 2025"
+        "date": "Jun 2025",
+        "monthKey": "2025-06",
+        "credentialId": "UC-2599f0b2-c821-4b95-b9de-3daa4b912350",
+        "url": "https://www.udemy.com/certificate/UC-2599f0b2-c821-4b95-b9de-3daa4b912350/"
+      },
+      {
+        "title": "Diploma in Human Resources Strategy",
+        "issuer": "Udemy",
+        "date": "Apr 2025",
+        "monthKey": "2025-04",
+        "credentialId": "UC-1f1d7b14-fa84-4c24-a8da-38dc8e83a4f3",
+        "url": "https://www.udemy.com/certificate/UC-1f1d7b14-fa84-4c24-a8da-38dc8e83a4f3/"
+      },
+      {
+        "title": "Chief Executive Officer (CEO) Program",
+        "issuer": "Udemy",
+        "date": "Apr 2025",
+        "monthKey": "2025-04",
+        "credentialId": "UC-3184c5a9-6199-4eb7-a1f0-6a62fa1a9f52",
+        "url": "https://www.udemy.com/certificate/UC-3184c5a9-6199-4eb7-a1f0-6a62fa1a9f52/"
+      },
+      {
+        "title": "AZ-900: Azure Fundamentals Complete Training",
+        "issuer": "Udemy",
+        "date": "Apr 2025",
+        "monthKey": "2025-04",
+        "credentialId": "UC-a7c0c248-7d13-4171-88f5-592e9671627b",
+        "url": "https://www.udemy.com/certificate/UC-a7c0c248-7d13-4171-88f5-592e9671627b/"
+      },
+      {
+        "title": "Human Resources Expert: Employee Relations and Engagement",
+        "issuer": "MTF Institute",
+        "date": "Apr 2025",
+        "monthKey": "2025-04",
+        "credentialId": "UC-20f2ee0a-d0f1-4e42-b650-51f49d44de5",
+        "url": "https://www.udemy.com/certificate/UC-20f2ee0a-d0f1-4e42-b650-51f49d44de5/"
+      },
+      {
+        "title": "Project Management with ChatGPT: Complete Guide",
+        "issuer": "Udemy",
+        "date": "Mar 2025",
+        "monthKey": "2025-03",
+        "credentialId": "UC-e510ebbb-3f7b-4554-ac2b-d81899c5b5dc",
+        "url": "https://www.udemy.com/certificate/UC-e510ebbb-3f7b-4554-ac2b-d81899c5b5dc/"
       },
       {
         "title": "Professional Certificate in Project Management",
         "issuer": "Udemy",
-        "date": "Mar 2025"
+        "date": "Mar 2025",
+        "monthKey": "2025-03",
+        "credentialId": "UC-eeecc597-74e9-4609-9d9d-daf99a76665b",
+        "url": "https://www.udemy.com/certificate/UC-eeecc597-74e9-4609-9d9d-daf99a76665b/"
+      },
+      {
+        "title": "Emotional Intelligence in Leadership",
+        "issuer": "Udemy",
+        "date": "Mar 2025",
+        "monthKey": "2025-03",
+        "credentialId": "UC-38f11822-3c9e-48b7-94fb-392a50beb81e",
+        "url": "https://www.udemy.com/certificate/UC-38f11822-3c9e-48b7-94fb-392a50beb81e/"
       },
       {
         "title": "Public Speaking and Presentation Skills Masterclass",
         "issuer": "Udemy",
-        "date": "Feb 2025"
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "UC-6bf2f4f0-255b-49a7-aa39-81342e3eecc8",
+        "url": "https://www.udemy.com/certificate/UC-6bf2f4f0-255b-49a7-aa39-81342e3eecc8/"
+      },
+      {
+        "title": "Diploma in Professional Meeting Minutes Management",
+        "issuer": "Udemy",
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "UC-2f282b1d-1a54-47bd-b01e-ec71bbdeeb1f",
+        "url": "https://www.udemy.com/certificate/UC-2f282b1d-1a54-47bd-b01e-ec71bbdeeb1f/"
+      },
+      {
+        "title": "AWS Certified SysOps Administrator Associate Complete Guide",
+        "issuer": "Udemy",
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "UC-7aba9430-d730-40a2-aaed-7fa640b53c30",
+        "url": "https://www.udemy.com/certificate/UC-7aba9430-d730-40a2-aaed-7fa640b53c30/"
+      },
+      {
+        "title": "Ecology, Ecosystem, Climate Change Sustainability",
+        "issuer": "Udemy",
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "UC-f38fed00-c019-49d1-9945-2f7cd0805071",
+        "url": "https://www.udemy.com/certificate/UC-f38fed00-c019-49d1-9945-2f7cd0805071/"
+      },
+      {
+        "title": "Professional Certificate in Career Coaching",
+        "issuer": "Udemy",
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "UC-aa730c94-6868-4258-93c3-61148293815e",
+        "url": "https://www.udemy.com/certificate/UC-aa730c94-6868-4258-93c3-61148293815e/"
+      },
+      {
+        "title": "Project Management",
+        "issuer": "Oxford Home Study Center",
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "LC121006",
+        "url": "https://oxfordhomestudy.com/"
       },
       {
         "title": "Diploma in Event Management",
-        "issuer": "Oxford OHSC",
-        "date": "Feb 2025"
+        "issuer": "Oxford Home Study Center",
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "LC121014",
+        "url": "https://oxfordhomestudy.com/"
       },
       {
-        "title": "GIS Software & Application",
+        "title": "Advanced PowerPoint Masterclass for Professionals",
         "issuer": "Udemy",
-        "date": "Jan 2025"
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "UC-8ced6c56-d137-48a6-a07f-b51e1fe8da2e",
+        "url": "https://www.udemy.com/certificate/UC-8ced6c56-d137-48a6-a07f-b51e1fe8da2e/"
+      },
+      {
+        "title": "Communication Skills For Success — In Business & In Life",
+        "issuer": "Udemy",
+        "date": "Feb 2025",
+        "monthKey": "2025-02",
+        "credentialId": "UC-1e786162-00c5-4381-8e3a-abd0e2ce7dc3",
+        "url": "https://www.udemy.com/certificate/UC-1e786162-00c5-4381-8e3a-abd0e2ce7dc3/"
+      },
+      {
+        "title": "Introduction to Web Development with ChatGPT",
+        "issuer": "Simplilearn",
+        "date": "Jan 2025",
+        "monthKey": "2025-01",
+        "credentialId": "7932742_82587301740029831071",
+        "url": "https://verify.simplilearn.com/"
+      },
+      {
+        "title": "Diploma in Internet Marketing",
+        "issuer": "eLearning College",
+        "date": "Jan 2025",
+        "monthKey": "2025-01",
+        "credentialId": "LC224113",
+        "url": "https://www.elearningcollege.com/"
       },
       {
         "title": "Diploma in Leadership & Management",
         "issuer": "eLearning College",
-        "date": "Jan 2025"
+        "date": "Jan 2025",
+        "monthKey": "2025-01",
+        "credentialId": "LC224112",
+        "url": "https://www.elearningcollege.com/"
+      },
+      {
+        "title": "GIS Software & Application Online Course",
+        "issuer": "Udemy",
+        "date": "Jan 2025",
+        "monthKey": "2025-01",
+        "credentialId": "UC-08ed38f5-85ce-46c8-a2af-9c926210c5ef",
+        "url": "https://www.udemy.com/certificate/UC-08ed38f5-85ce-46c8-a2af-9c926210c5ef/"
       }
     ]
   },
@@ -550,7 +688,6 @@
     }
   ],
   "social": {
-    "email": "info@adhikarichandra.com.np",
     "email": "hello@adhikarichandra.com.np",
     "phone": "+977-9851301722",
     "whatsapp": "https://wa.me/9779851301722",
