@@ -51,7 +51,7 @@ export const ROUTES = {
   "/journey": {
     title: "Journey",
     description:
-      "Chandra Bhakta Adhikari's career journey across thirteen roles: from SAP Coordinator at a single Rotaract club to Program Manager of Nepal's flagship national business summits.",
+      "Chandra Bhakta Adhikari's career journey across fifteen roles: from grassroots DRR/MHM training and Rotaract club committees to Program Manager of Nepal's flagship national business summits.",
     breadcrumb: [{ name: "Home", path: "/" }, { name: "Journey", path: "/journey" }],
     type: "CollectionPage",
   },

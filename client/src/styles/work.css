@@ -61,8 +61,3 @@
 .case-list--journey{gap:var(--sp5);}
 .case-list--journey .case-media img{aspect-ratio:4/3;}
 .work--journey{padding-block:var(--sp5) var(--sp5);}
-
-.journey-close{max-width:52ch;margin:var(--sp5) auto 0;text-align:center;color:var(--text-on-dark);}
-.journey-close-kicker{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--marigold);margin-bottom:.9em;}
-.journey-close p{font-size:1.02rem;line-height:1.75;color:rgba(255,255,255,.82);margin-bottom:1em;}
-.journey-close p:last-child{margin-bottom:0;}

@@ -732,9 +732,59 @@
   "journey": {
     "chapters": [
       {
+        "id": "project-coordinator-asha",
+        "kicker": "Chapter 01 of 15 · Asha Project Nepal",
+        "title": "Project Coordinator",
+        "role": "Asha Project Nepal",
+        "period": "Jan 2019 to Present",
+        "stat": {
+          "label": "No Finish Line"
+        },
+        "hero": "g-school-groupphoto.jpg",
+        "dek": "Some of my work happens on a stage. This work happens in classrooms with dirt floors and water systems that either function or don't — no in-between, no partial credit. As Project Coordinator, I oversee education, sanitation, and community-development activities across 18 districts and 29 schools, coordinating directly with district teams and local NGOs who are the ones actually turning a plan into a working latrine, a functioning water point, or a classroom that stays open.",
+        "body": "The part of this role that has shaped me most is donor reporting — not because it's exciting, but because it's a test of integrity that repeats every single cycle. Donors are trusting me with resources meant for children and communities who will never see the spreadsheet, and I've made it a personal standard that every report I file is accurate enough that it could survive any level of scrutiny. That discipline is what keeps a small NGO's word worth something over six years and counting.\n\nWhat I've come to understand doing this work part-time, alongside everything else, is that community development isn't a campaign — it's a maintenance commitment. There's no summit-style finish line where the sanitation project is “done.” There's only the ongoing question of whether the system installed two years ago still works today, and whether the school that got new water access last year still has it. Staying in this role since 2019 has taught me the patience that every other part of my work depends on.",
+        "highlights": [
+          "Oversee education, sanitation, and community-development activities across 18 districts and 29 schools",
+          "Coordinate directly with district teams and local NGOs to keep field-level delivery on track",
+          "Maintain rigorous stakeholder and donor reporting to protect financial transparency and trust",
+          "Lead monitoring & evaluation to ensure long-term project outcomes, not just short-term completion"
+        ],
+        "tags": [
+          "Program Management",
+          "Donor Reporting",
+          "WASH & Education"
+        ],
+        "chapter": "01"
+      },
+      {
+        "id": "trainer-connection-nepal",
+        "kicker": "Chapter 02 of 15 · Connection Nepal",
+        "title": "Trainer (Consultant)",
+        "role": "Connection Nepal",
+        "period": "2019 to Present",
+        "stat": {
+          "label": "Earning The Room's Trust"
+        },
+        "hero": "g-classroom-professionals.jpg",
+        "dek": "You can't teach disaster preparedness from a slide deck, and you can't teach menstrual hygiene to a room that doesn't trust you yet. I learned that in my very first sessions as a Trainer with Connection Nepal, and it shaped everything about how I've approached this role since. Designing a national training program is the easy part — the real work is standing in front of a classroom of skeptical teenagers, or a circle of community elders, and earning enough trust in one session that they'll actually change a behavior after you leave.",
+        "body": "Over the years, that work has taken me across more than 10 districts, training over 5,000 youth, educators, and community members on Disaster Risk Reduction, Climate Change Adaptation, Menstrual Hygiene Management, and WASH. Each topic comes with its own resistance to push through — DRR competes with the belief that disasters are unpredictable and unavoidable; MHM competes with silence and stigma; climate adaptation competes with the sense that the problem is too big for any one village to act on. My job isn't just to deliver information. It's to dismantle the reason people have for not acting on it yet.\n\nWhat keeps me returning to the same districts year after year is simple: a single training session changes very little. A relationship, sustained over multiple visits, changes behavior for good. I don't just deliver a curriculum and leave — I build the training manuals, the partnership proposals, and the follow-up relationships that make sure the knowledge doesn't fade the week after I'm gone. This is the quietest work I do, and also the one I'm most certain matters.",
+        "highlights": [
+          "Designed and delivered national training programs on DRR, Climate Change Adaptation, MHM, and WASH",
+          "Trained 5,000+ youth, educators, and community members across 10+ districts",
+          "Built sustained, in-person trust that turned single sessions into lasting behavior change",
+          "Developed training manuals and partnership proposals with local and international stakeholders"
+        ],
+        "tags": [
+          "Training & Capacity Building",
+          "DRR & MHM",
+          "Community Trust"
+        ],
+        "chapter": "02"
+      },
+      {
         "id": "sap-coordinator",
-        "chapter": "01",
-        "kicker": "Chapter 01 of 13 · Rotaract Club of Sukedhara",
+        "chapter": "03",
+        "kicker": "Chapter 03 of 15 · Rotaract Club of Sukedhara",
         "title": "SAP Coordinator",
         "role": "Rotaract Club of Sukedhara",
         "period": "Jun 2019 to Dec 2020",
@@ -757,8 +807,8 @@
       },
       {
         "id": "president",
-        "chapter": "02",
-        "kicker": "Chapter 02 of 13 · Rotaract Club of Sukedhara",
+        "chapter": "04",
+        "kicker": "Chapter 04 of 15 · Rotaract Club of Sukedhara",
         "title": "President",
         "role": "Rotaract Club of Sukedhara",
         "period": "Jul 2020 to Jun 2021",
@@ -781,8 +831,8 @@
       },
       {
         "id": "amnesty-secretary",
-        "chapter": "03",
-        "kicker": "Chapter 03 of 13 · Amnesty International Tri-Chandra Youth Network",
+        "chapter": "05",
+        "kicker": "Chapter 05 of 15 · Amnesty International Tri-Chandra Youth Network",
         "title": "Secretary",
         "role": "Amnesty International Tri-Chandra Youth Network",
         "period": "Jan 2020 to Aug 2022",
@@ -805,8 +855,8 @@
       },
       {
         "id": "ipp",
-        "chapter": "04",
-        "kicker": "Chapter 04 of 13 · Rotaract Club of Sukedhara",
+        "chapter": "06",
+        "kicker": "Chapter 06 of 15 · Rotaract Club of Sukedhara",
         "title": "Immediate Past President",
         "role": "Rotaract Club of Sukedhara",
         "period": "Jul 2021 to Jun 2022",
@@ -829,8 +879,8 @@
       },
       {
         "id": "seg-member",
-        "chapter": "05",
-        "kicker": "Chapter 05 of 13 · T.U. SEG Student Chapter (Society of Exploration Geophysicists)",
+        "chapter": "07",
+        "kicker": "Chapter 07 of 15 · T.U. SEG Student Chapter (Society of Exploration Geophysicists)",
         "title": "Member",
         "role": "T.U. SEG Student Chapter (Society of Exploration Geophysicists)",
         "period": "Jul 2021 to Present",
@@ -853,8 +903,8 @@
       },
       {
         "id": "sergeant-at-arms",
-        "chapter": "06",
-        "kicker": "Chapter 06 of 13 · Rotaract District 3292",
+        "chapter": "08",
+        "kicker": "Chapter 08 of 15 · Rotaract District 3292",
         "title": "Sergeant-at-Arms",
         "role": "Rotaract District 3292",
         "period": "Jul 2022 to Jun 2023",
@@ -877,8 +927,8 @@
       },
       {
         "id": "goodwill-ambassador",
-        "chapter": "07",
-        "kicker": "Chapter 07 of 13 · The Asha Project Nepal",
+        "chapter": "09",
+        "kicker": "Chapter 09 of 15 · The Asha Project Nepal",
         "title": "Goodwill Ambassador",
         "role": "The Asha Project Nepal",
         "period": "Jan 2022 to Present",
@@ -901,8 +951,8 @@
       },
       {
         "id": "asst-district-secretary",
-        "chapter": "08",
-        "kicker": "Chapter 08 of 13 · Rotaract District 3292",
+        "chapter": "10",
+        "kicker": "Chapter 10 of 15 · Rotaract District 3292",
         "title": "Assistant District Secretary",
         "role": "Rotaract District 3292",
         "period": "2023 to 2024",
@@ -925,8 +975,8 @@
       },
       {
         "id": "club-adviser",
-        "chapter": "09",
-        "kicker": "Chapter 09 of 13 · Rotaract Club of Sukedhara",
+        "chapter": "11",
+        "kicker": "Chapter 11 of 15 · Rotaract Club of Sukedhara",
         "title": "Club Adviser",
         "role": "Rotaract Club of Sukedhara",
         "period": "Jul 2023 to Present",
@@ -949,8 +999,8 @@
       },
       {
         "id": "program-officer",
-        "chapter": "10",
-        "kicker": "Chapter 10 of 13 · Nepal Business Institute",
+        "chapter": "12",
+        "kicker": "Chapter 12 of 15 · Nepal Business Institute",
         "title": "Program Officer",
         "role": "Nepal Business Institute",
         "period": "Oct 2024 to Sep 2025",
@@ -974,8 +1024,8 @@
       },
       {
         "id": "asst-drr",
-        "chapter": "11",
-        "kicker": "Chapter 11 of 13 · Rotaract District 3292",
+        "chapter": "13",
+        "kicker": "Chapter 13 of 15 · Rotaract District 3292",
         "title": "Assistant District Rotaract Representative",
         "role": "Rotaract District 3292",
         "period": "2024 to 2025",
@@ -999,8 +1049,8 @@
       },
       {
         "id": "district-secretary",
-        "chapter": "12",
-        "kicker": "Chapter 12 of 13 · Rotaract District 3292",
+        "chapter": "14",
+        "kicker": "Chapter 14 of 15 · Rotaract District 3292",
         "title": "District Secretary",
         "role": "Rotaract District 3292",
         "period": "2025 to 2026",
@@ -1024,8 +1074,8 @@
       },
       {
         "id": "program-manager",
-        "chapter": "13",
-        "kicker": "Chapter 13 of 13 · Nepal Business Institute",
+        "chapter": "15",
+        "kicker": "Chapter 15 of 15 · Nepal Business Institute",
         "title": "Program Manager",
         "role": "Nepal Business Institute",
         "period": "Sep 2025 to Present",
@@ -1047,10 +1097,6 @@
           "Strategy"
         ]
       }
-    ],
-    "throughline": [
-      "Thirteen roles. Two nonprofits, one student chapter, one advocacy network, one district, one national institute. Read separately, they look like a wide-ranging resume. Read together, they tell one story: start with the smallest, least-noticed task, do it with total reliability, and let people trust you with more only after you've earned it.",
-      "Nobody skips from SAP Coordinator to Program Manager. You get there one honest, unglamorous role at a time — and if this story inspires anything, let it be this: the small role you're in right now is not a detour from the big one you want. It's the only road there."
     ]
   }
 }

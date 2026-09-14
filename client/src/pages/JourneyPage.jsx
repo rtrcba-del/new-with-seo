@@ -5,17 +5,17 @@ import { useSEO } from "../lib/seo.js";
 export default function JourneyPage({ journey }) {
   useSEO({
     title: "Journey",
-    description: "Chandra Bhakta Adhikari's career journey across thirteen roles: from SAP Coordinator at a single Rotaract club to Program Manager of Nepal's flagship national business summits.",
+    description: "Chandra Bhakta Adhikari's career journey across fifteen roles: from grassroots training and Rotaract club committees to Program Manager of Nepal's flagship national business summits.",
     path: "/journey",
   });
   return (
     <>
       <PageHeader
-        eyebrow="Thirteen Roles, One Throughline"
+        eyebrow="Fifteen Roles, Chapter By Chapter"
         title="Journey"
-        subtitle="Not a résumé. Thirteen chapters, told in order, each one built on the last."
+        subtitle="Not a résumé. Fifteen chapters, told in order, each one built on the last."
       />
-      <Journey journey={journey?.chapters} throughline={journey?.throughline} embedded />
+      <Journey journey={journey?.chapters} embedded />
     </>
   );
 }

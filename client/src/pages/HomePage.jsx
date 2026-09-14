@@ -5,13 +5,20 @@ import Capabilities from "../sections/Capabilities.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { useSEO } from "../lib/seo.js";
 
-export default function HomePage({ profile, stats, capabilities, projects }) {
+// The three chapters that best summarize the range of the Journey:
+// grassroots training, district-level scale, and the current flagship role.
+const HIGHLIGHT_IDS = ["trainer-connection-nepal", "district-secretary", "program-manager"];
+
+export default function HomePage({ profile, stats, capabilities, journey }) {
   useSEO({
     title: "Program Manager & Strategic Partnerships",
     description: "Chandra Bhakta Adhikari is a Nepal-based Program Manager and Strategic Partnerships professional working across youth leadership, entrepreneurship, stakeholder engagement and community development.",
     path: "/",
   });
-  const preview = projects?.slice(0, 3) ?? [];
+  const chapters = journey?.chapters ?? [];
+  const preview = HIGHLIGHT_IDS
+    .map((id) => chapters.find((c) => c.id === id))
+    .filter(Boolean);
   return (
     <>
       <Hero profile={profile} />
@@ -21,8 +28,8 @@ export default function HomePage({ profile, stats, capabilities, projects }) {
       <section className="home-teaser">
         <div className="container">
           <Reveal>
-            <span className="sec-eyebrow sec-eyebrow--light">Selected Work</span>
-            <h2 className="sec-title-light">Three Case Files, Not A Resume Line In Sight.</h2>
+            <span className="sec-eyebrow sec-eyebrow--light">Journey Highlights</span>
+            <h2 className="sec-title-light">Three Chapters, Not A Resume Line In Sight.</h2>
           </Reveal>
           <div className="teaser-grid">
             {preview.map((p, i) => (

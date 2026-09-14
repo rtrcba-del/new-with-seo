@@ -3,6 +3,7 @@ import Reveal from "../components/Reveal.jsx";
 
 function Chapter({ role, reverse }) {
   const [open, setOpen] = useState(false);
+  const bodyParas = Array.isArray(role.body) ? role.body : role.body.split("\n\n");
   return (
     <Reveal as="article" className={`case case--journey ${reverse ? "case--rev" : ""}`}>
       <div className="case-media">
@@ -19,7 +20,7 @@ function Chapter({ role, reverse }) {
         <p className="case-dek">{role.dek}</p>
 
         <div className={`case-body ${open ? "open" : ""}`}>
-          <p>{role.body}</p>
+          {bodyParas.map((p, i) => <p key={i}>{p}</p>)}
           <ul className="case-highlights">
             {role.highlights.map((h,i) => <li key={i}>{h}</li>)}
           </ul>
@@ -38,27 +39,19 @@ function Chapter({ role, reverse }) {
   );
 }
 
-export default function Journey({ journey, throughline, embedded }) {
+export default function Journey({ journey, embedded }) {
   if (!journey?.length) return null;
   return (
     <section className={`work work--journey ${embedded ? "work--embedded" : ""}`} id="journey">
       {!embedded && (
         <div className="container">
-          <span className="sec-eyebrow sec-eyebrow--light">Thirteen Roles, One Throughline</span>
-          <h2 className="sec-title-light">The Journey, Chapter By Chapter.</h2>
+          <span className="sec-eyebrow sec-eyebrow--light">Fifteen Roles, Chapter By Chapter</span>
+          <h2 className="sec-title-light">The Journey, One Role At A Time.</h2>
         </div>
       )}
       <div className="case-list case-list--journey">
         {journey.map((r, i) => <Chapter role={r} key={r.id} reverse={i % 2 === 1} />)}
       </div>
-      {throughline && (
-        <div className="container">
-          <Reveal className="journey-close">
-            <span className="journey-close-kicker">The Throughline</span>
-            {throughline.map((p, i) => <p key={i}>{p}</p>)}
-          </Reveal>
-        </div>
-      )}
     </section>
   );
 }

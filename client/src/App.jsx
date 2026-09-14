@@ -38,7 +38,7 @@ export default function App() {
       .then(r => r.ok ? r.json() : null).then(d => { if (d) setVisitors(d.count); }).catch(()=>{});
   }, []);
 
-  const { profile, stats, capabilities, projects, journey, experience, leadership, certifications, gallery, social, awards, references } = content;
+  const { profile, stats, capabilities, journey, experience, leadership, certifications, gallery, social, awards, references } = content;
 
   return (
     <BrowserRouter>
@@ -47,7 +47,7 @@ export default function App() {
       <PageFade>
         <main>
           <Routes>
-            <Route path="/" element={<HomePage profile={profile} stats={stats} capabilities={capabilities} projects={projects} />} />
+            <Route path="/" element={<HomePage profile={profile} stats={stats} capabilities={capabilities} journey={journey} />} />
             <Route path="/journey" element={<JourneyPage journey={journey} />} />
             <Route path="/gallery" element={<GalleryPage gallery={gallery} />} />
             <Route path="/experience" element={<ExperiencePage experience={experience} certifications={certifications} awards={awards} />} />
