@@ -37,7 +37,7 @@ export default function HomePage({ profile, stats, capabilities, projects }) {
             ))}
           </div>
           <Reveal className="teaser-cta">
-            <Link to="/projects" className="btn btn--ghost">View All Projects</Link>
+            <Link to="/journey" className="btn btn--ghost">See The Full Journey</Link>
           </Reveal>
         </div>
       </section>

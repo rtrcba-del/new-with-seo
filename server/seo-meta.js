@@ -48,11 +48,11 @@ export const ROUTES = {
     breadcrumb: [{ name: "Home", path: "/" }, { name: "Experience", path: "/experience" }],
     type: "ProfilePage",
   },
-  "/projects": {
-    title: "Projects & Case Studies",
+  "/journey": {
+    title: "Journey",
     description:
-      "Case studies from Chandra Bhakta Adhikari's work: Nepal Business Summit, Rotaract District 3292 leadership, and MHM/WASH field campaigns across 20+ districts of Nepal.",
-    breadcrumb: [{ name: "Home", path: "/" }, { name: "Projects", path: "/projects" }],
+      "Chandra Bhakta Adhikari's career journey across thirteen roles: from SAP Coordinator at a single Rotaract club to Program Manager of Nepal's flagship national business summits.",
+    breadcrumb: [{ name: "Home", path: "/" }, { name: "Journey", path: "/journey" }],
     type: "CollectionPage",
   },
   "/leadership": {
@@ -117,11 +117,11 @@ function snapshot(routePath, content) {
         <ul>${(content?.experience || [])
           .map((e) => `<li>${esc_(e.role)}, ${esc_(e.org)} (${esc_(e.period)}): ${esc_(e.summary || "")}</li>`)
           .join("")}</ul>`;
-    case "/projects":
+    case "/journey":
       return `
-        <p><strong>Projects &amp; Case Studies — ${esc_(p.name)}</strong></p>
-        <ul>${(content?.projects || [])
-          .map((pr) => `<li>${esc_(pr.title)}: ${esc_(pr.dek || "")}</li>`)
+        <p><strong>Journey — ${esc_(p.name)}</strong></p>
+        <ul>${(content?.journey?.chapters || [])
+          .map((c) => `<li>${esc_(c.title)}, ${esc_(c.role)} (${esc_(c.period)}): ${esc_(c.dek || "")}</li>`)
           .join("")}</ul>`;
     case "/leadership":
       return `

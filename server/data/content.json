@@ -728,5 +728,329 @@
       "name": "Mr. Bishal Gaire",
       "title": "Executive Chairperson, Nepal Business Institute"
     }
-  ]
+  ],
+  "journey": {
+    "chapters": [
+      {
+        "id": "sap-coordinator",
+        "chapter": "01",
+        "kicker": "Chapter 01 of 13 · Rotaract Club of Sukedhara",
+        "title": "SAP Coordinator",
+        "role": "Rotaract Club of Sukedhara",
+        "period": "Jun 2019 to Dec 2020",
+        "stat": {
+          "label": "Where It All Started"
+        },
+        "hero": "g-classroom-whiteboard.jpg",
+        "dek": "Every long career has a first small task that nobody remembers except the person who did it. Mine was coordinating service projects for a single club — chasing down volunteers, confirming venues, following up with partners who'd said yes weeks earlier and then gone quiet. Nothing about it was glamorous, and that was exactly the point. I learned that a \"project\" isn't an idea, it's a checklist someone actually finishes, and that stakeholders don't remember your good intentions — they remember whether you called back when you said you would.",
+        "body": "That habit of following through became the foundation for every larger role that came after. Long before I coordinated national summits, I was learning the same lesson at club scale: consistency is the only currency that builds trust.",
+        "highlights": [
+          "Coordinated grassroots service projects from planning through execution",
+          "Managed stakeholder engagement and follow-through at the club level",
+          "Built the habits of reliability and consistency that carried into every later role"
+        ],
+        "tags": [
+          "Grassroots",
+          "Rotaract",
+          "Follow-Through"
+        ]
+      },
+      {
+        "id": "president",
+        "chapter": "02",
+        "kicker": "Chapter 02 of 13 · Rotaract Club of Sukedhara",
+        "title": "President",
+        "role": "Rotaract Club of Sukedhara",
+        "period": "Jul 2020 to Jun 2021",
+        "stat": {
+          "label": "First Full Ownership"
+        },
+        "hero": "g-presidents-night-welcome.jpg",
+        "dek": "A year in, the club handed me something heavier than a task list — accountability for the whole thing. As President, I led club operations and community service initiatives during one of the hardest stretches for youth organizations anywhere: the middle of a global disruption, when in-person service was harder to organize and members were easier to lose. I had to rethink how a club stays active when the usual playbook doesn't apply, keeping morale up and service moving even when circumstances were working against us.",
+        "body": "This was my first real lesson in ownership. When a member's experience was good, that was a team effort. When something fell through, that was on me to fix — not to explain away. I left the role having learned that leadership is measured less by the plans you make and more by what you do when the plan breaks.",
+        "highlights": [
+          "Directed full club operations and community-service programming for a full term",
+          "Sustained member engagement and service delivery through a difficult operating period",
+          "Took first full ownership of outcomes rather than individual tasks"
+        ],
+        "tags": [
+          "Club Leadership",
+          "Rotaract",
+          "Crisis Management"
+        ]
+      },
+      {
+        "id": "amnesty-secretary",
+        "chapter": "03",
+        "kicker": "Chapter 03 of 13 · Amnesty International Tri-Chandra Youth Network",
+        "title": "Secretary",
+        "role": "Amnesty International Tri-Chandra Youth Network",
+        "period": "Jan 2020 to Aug 2022",
+        "stat": {
+          "label": "Advocacy Without Applause"
+        },
+        "hero": "g-communication-skills.jpg",
+        "dek": "Parallel to my Rotaract path, I was learning a different discipline entirely: advocacy without applause. As Secretary of the Amnesty International Tri-Chandra Youth Network, I supported human rights awareness and advocacy initiatives — work where the audience is often small, the topics are uncomfortable, and progress is measured in years, not event cycles.",
+        "body": "This role sharpened something that shows up in everything I do now: the ability to talk about difficult, sometimes unpopular subjects clearly and respectfully, and to keep showing up for a cause even when it isn't the easiest room to be in. It's the same discipline I now bring to training sessions on sensitive topics like menstrual hygiene and climate risk — the comfort with hard conversations was built here first.",
+        "highlights": [
+          "Supported human rights education and advocacy campaigns over a two-and-a-half-year term",
+          "Developed comfort engaging communities on sensitive, high-stakes topics",
+          "Built long-view patience for causes with slow, incremental progress"
+        ],
+        "tags": [
+          "Advocacy",
+          "Human Rights",
+          "Communication"
+        ]
+      },
+      {
+        "id": "ipp",
+        "chapter": "04",
+        "kicker": "Chapter 04 of 13 · Rotaract Club of Sukedhara",
+        "title": "Immediate Past President",
+        "role": "Rotaract Club of Sukedhara",
+        "period": "Jul 2021 to Jun 2022",
+        "stat": {
+          "label": "Built To Outlast"
+        },
+        "hero": "g-appreciation-handoff.jpg",
+        "dek": "Stepping down from President didn't mean stepping away. As Immediate Past President, I provided advisory support for leadership continuity and club growth — sitting beside the new leadership team, answering the questions I once had no one to ask, and making sure institutional knowledge didn't walk out the door with my term.",
+        "body": "It's easy to think leadership ends when the title does. This role taught me the opposite: the real test of whether you built something lasting is whether it's still standing, and still improving, after you've handed it off. That question has followed me into every role since — I don't just want to lead well, I want what I build to outlast my involvement in it.",
+        "highlights": [
+          "Provided structured advisory support during a full leadership transition",
+          "Preserved institutional knowledge and continuity for incoming club leadership",
+          "Reinforced a personal standard: build things that outlast your own tenure"
+        ],
+        "tags": [
+          "Mentorship",
+          "Rotaract",
+          "Continuity"
+        ]
+      },
+      {
+        "id": "seg-member",
+        "chapter": "05",
+        "kicker": "Chapter 05 of 13 · T.U. SEG Student Chapter (Society of Exploration Geophysicists)",
+        "title": "Member",
+        "role": "T.U. SEG Student Chapter (Society of Exploration Geophysicists)",
+        "period": "Jul 2021 to Present",
+        "stat": {
+          "label": "A Parallel Discipline"
+        },
+        "hero": "g-office.jpg",
+        "dek": "Leadership development doesn't happen on only one track, and I've made a point of keeping an academic and technical thread running alongside my community work. As a member of the T.U. SEG Student Chapter, I've taken part in academic and leadership activities within a scientific community — a very different environment from a youth-development summit, but one that sharpens the same underlying skill: thinking rigorously, communicating technical ideas clearly, and contributing meaningfully to a group with its own standards and culture.",
+        "body": "This ongoing involvement is a reminder to myself as much as anyone else that well-rounded leadership draws from more than one discipline. The precision I've picked up here shows up quietly in how I structure reports, evaluate program outcomes, and hold myself to evidence rather than assumption.",
+        "highlights": [
+          "Sustained multi-year engagement in an academic and scientific student community",
+          "Contributed to leadership and organizational activities outside the nonprofit/youth-development space",
+          "Strengthened analytical rigor now applied to program monitoring and evaluation"
+        ],
+        "tags": [
+          "Academic",
+          "Geoscience",
+          "Analytical Rigor"
+        ]
+      },
+      {
+        "id": "sergeant-at-arms",
+        "chapter": "06",
+        "kicker": "Chapter 06 of 13 · Rotaract District 3292",
+        "title": "Sergeant-at-Arms",
+        "role": "Rotaract District 3292",
+        "period": "Jul 2022 to Jun 2023",
+        "stat": {
+          "label": "First Look At Scale"
+        },
+        "hero": "g-panel-laptops.jpg",
+        "dek": "Moving to the district level for the first time, I took on a role most people never think twice about — Sergeant-at-Arms. I supported meeting protocols and district event coordination, the invisible scaffolding that keeps a room full of club leaders from two countries running on time, on agenda, and on the same page.",
+        "body": "It would have been easy to treat this as a minor role. Instead, I treated it as an apprenticeship in scale: this was my first close look at how a 150-club district actually functions day to day, long before I'd be asked to help lead it. Structure, I learned here, isn't bureaucracy — it's what lets a large, diverse group actually get things done together.",
+        "highlights": [
+          "Managed meeting protocol and order for district-level proceedings",
+          "Coordinated logistics for multi-club district events",
+          "Gained early, close-up exposure to district-scale operations ahead of later leadership roles"
+        ],
+        "tags": [
+          "District Operations",
+          "Rotaract",
+          "Event Logistics"
+        ]
+      },
+      {
+        "id": "goodwill-ambassador",
+        "chapter": "07",
+        "kicker": "Chapter 07 of 13 · The Asha Project Nepal",
+        "title": "Goodwill Ambassador",
+        "role": "The Asha Project Nepal",
+        "period": "Jan 2022 to Present",
+        "stat": {
+          "label": "The Constant Thread"
+        },
+        "hero": "g-entrance.jpg",
+        "dek": "This role has quietly run underneath almost everything else I've done since 2022. As Goodwill Ambassador for The Asha Project Nepal, I advocate for youth empowerment and social-impact initiatives wherever I go — in district meetings, training halls, and now on national summit stages. It isn't a scheduled responsibility with fixed hours; it's a lens I carry into every other role.",
+        "body": "What this ambassadorship has given me is a consistent \"why\" underneath a resume that could otherwise look scattered across nonprofits, districts, and a business institute. Every version of the work — sanitation projects, entrepreneurship summits, Rotaract mentorship — traces back to the same conviction: that young people do extraordinary things when someone invests in them early and consistently.",
+        "highlights": [
+          "Champion youth empowerment and social-impact messaging across multiple platforms and audiences",
+          "Provide a consistent advocacy thread connecting grassroots, district, and national-level work",
+          "Represent Asha Project Nepal's mission in public and institutional settings"
+        ],
+        "tags": [
+          "Advocacy",
+          "Youth Empowerment",
+          "Public Speaking"
+        ]
+      },
+      {
+        "id": "asst-district-secretary",
+        "chapter": "08",
+        "kicker": "Chapter 08 of 13 · Rotaract District 3292",
+        "title": "Assistant District Secretary",
+        "role": "Rotaract District 3292",
+        "period": "2023 to 2024",
+        "stat": {
+          "label": "The Operational Backbone"
+        },
+        "hero": "g-district-budget-podium.jpg",
+        "dek": "Back at the district level in a more demanding capacity, I managed district records, reporting, and communication between clubs and the district council. This is the kind of role where success is invisible — nobody praises you for a report that was accurate and on time, but everyone notices if it isn't. I made sure the flow of information between more than a hundred clubs and the district leadership never broke down.",
+        "body": "This role became the operational backbone for everything I'd do at the district level afterward. When I later stepped into representative and secretary roles, I already understood exactly how information, requests, and decisions were supposed to move through the system — because I'd spent a year making sure they did.",
+        "highlights": [
+          "Maintained accurate district records and reporting systems",
+          "Managed two-way communication flow between clubs and the district council",
+          "Built the operational foundation later used in district representative and secretary roles"
+        ],
+        "tags": [
+          "District Records",
+          "Rotaract",
+          "Reporting"
+        ]
+      },
+      {
+        "id": "club-adviser",
+        "chapter": "09",
+        "kicker": "Chapter 09 of 13 · Rotaract Club of Sukedhara",
+        "title": "Club Adviser",
+        "role": "Rotaract Club of Sukedhara",
+        "period": "Jul 2023 to Present",
+        "stat": {
+          "label": "Mentor, Not Controller"
+        },
+        "hero": "chandra-bhakta-adhikari-portrait-lounge.jpg",
+        "dek": "I came back to where it all started, this time as a mentor instead of a member. As Club Adviser, I guide the current leadership team in strategy, project planning, and execution — the same three things I once had to learn from scratch as SAP Coordinator and President. Now I'm the person a nervous new president can call before a big decision, the way I once wished someone was for me.",
+        "body": "There's a particular kind of satisfaction in watching a club you once led make decisions you never would have thought of — and realizing your job now is to support that, not to control it. This role keeps me honest about what good mentorship actually looks like: guidance offered, not control imposed.",
+        "highlights": [
+          "Advise current club leadership on strategy, planning, and project execution",
+          "Transfer institutional knowledge from a full presidency term to the next generation",
+          "Model hands-off, empowerment-based mentorship rather than directive leadership"
+        ],
+        "tags": [
+          "Mentorship",
+          "Rotaract",
+          "Strategy"
+        ]
+      },
+      {
+        "id": "program-officer",
+        "chapter": "10",
+        "kicker": "Chapter 10 of 13 · Nepal Business Institute",
+        "title": "Program Officer",
+        "role": "Nepal Business Institute",
+        "period": "Oct 2024 to Sep 2025",
+        "stat": {
+          "label": "National Stage, Same Fundamentals"
+        },
+        "hero": "g-audience-seated-hall.jpg",
+        "dek": "This is where everything converged. Every skill built across five years of club and district leadership — outreach, coordination, follow-through, comfort with difficult conversations — suddenly had a national stage to operate on. As Program Officer, I helped coordinate two of the country's largest youth and business gatherings, the Nepal Business Summit 2025 and the Youth Entrepreneurship Summit 2025, engaging colleges and youth networks across the entire country.",
+        "body": "The scale was new, but the fundamentals weren't. I ran targeted outreach campaigns and had the same kind of one-on-one conversations I'd been having since 2019, just now with national sponsors, media contacts, and policymakers instead of club members. I documented what worked after each event, the same discipline I'd learned keeping district records years earlier, and used it to make the next summit stronger.",
+        "highlights": [
+          "Coordinated execution of two flagship national events: Nepal Business Summit 2025 and Youth Entrepreneurship Summit 2025",
+          "Drove participant recruitment through digital campaigns and direct, one-to-one outreach",
+          "Built sponsor, media, and policymaker relationships to expand national visibility",
+          "Documented outcomes to directly inform the following year's strategy"
+        ],
+        "tags": [
+          "Program Management",
+          "Sponsorship",
+          "National Events"
+        ]
+      },
+      {
+        "id": "asst-drr",
+        "chapter": "11",
+        "kicker": "Chapter 11 of 13 · Rotaract District 3292",
+        "title": "Assistant District Rotaract Representative",
+        "role": "Rotaract District 3292",
+        "period": "2024 to 2025",
+        "stat": {
+          "label": "Finding Potential, Staying Close"
+        },
+        "hero": "g-installation.jpg",
+        "dek": "At the same time my national career was accelerating, my role in Rotaract deepened into something more people-focused than any I'd held before. As Assistant District Rotaract Representative, I mentored club presidents and secretaries across the district on project planning, member retention, and leadership growth — essentially becoming, for dozens of young leaders, the adviser I'd once needed myself.",
+        "body": "I also coordinated national training seminars like RYTS and DRR Installation, and supported service campaigns that turned that training into visible community action. This was the year the throughline of my whole career became unmistakable to me: whether it's a Rotaract club president or a first-time summit attendee, my real job is finding people with potential and staying close enough, long enough, to help it become real.",
+        "highlights": [
+          "Mentored dozens of club presidents and secretaries across the district",
+          "Coordinated national training seminars, including RYTS and DRR Installation",
+          "Supported service campaigns translating training into direct community impact",
+          "Strengthened member retention and leadership pipelines district-wide"
+        ],
+        "tags": [
+          "Mentorship",
+          "Training",
+          "Rotaract"
+        ]
+      },
+      {
+        "id": "district-secretary",
+        "chapter": "12",
+        "kicker": "Chapter 12 of 13 · Rotaract District 3292",
+        "title": "District Secretary",
+        "role": "Rotaract District 3292",
+        "period": "2025 to 2026",
+        "stat": {
+          "label": "150+ Clubs, One Discipline"
+        },
+        "hero": "chandra-bhakta-adhikari-rotaract-district-3292.jpg",
+        "dek": "Today, at the district level, I lead administration, communications, and strategic planning for more than 150 Rotaract clubs spanning two countries — Nepal and Bhutan. Every committee, every project, every district initiative is aligned to Rotary's Areas of Focus and the United Nations Sustainable Development Goals, so that grassroots service work connects to something larger than any single club.",
+        "body": "What strikes me most, holding this role, is the direct line back to 2019: the same instincts that made me double-check a volunteer list for one club now scale into coordinating strategic alignment across an entire binational network. The scope changed completely. The underlying discipline never did.",
+        "highlights": [
+          "Lead district administration, communications, and strategic planning for 150+ clubs",
+          "Oversee a binational network spanning Nepal and Bhutan",
+          "Align grassroots club projects with Rotary's Areas of Focus and the UN SDGs",
+          "Coordinate district committees to maintain strategic consistency at scale"
+        ],
+        "tags": [
+          "District Administration",
+          "Binational Network",
+          "Rotaract"
+        ]
+      },
+      {
+        "id": "program-manager",
+        "chapter": "13",
+        "kicker": "Chapter 13 of 13 · Nepal Business Institute",
+        "title": "Program Manager",
+        "role": "Nepal Business Institute",
+        "period": "Sep 2025 to Present",
+        "stat": {
+          "label": "Six Years, One Role"
+        },
+        "hero": "chandra-bhakta-adhikari-nepal-business-summit.jpg",
+        "dek": "This is the role every earlier one was quietly building toward. As Program Manager, I lead the planning and execution of Nepal's flagship business and entrepreneurship summits — owning strategy, sponsorship, government liaison, budgeting, and the complete participant journey from the first outreach message to post-event follow-up, months later.",
+        "body": "What makes this role different from every one before it isn't the size of the stage. It's that nothing here is new to me — the outreach reflects lessons from 2019, the stakeholder coordination reflects district-level discipline, the mentorship instincts reflect years of advising club leaders, and the advocacy reflects a Goodwill Ambassador role I've carried since 2022. Six years of separate roles didn't just happen alongside each other. They were training for this one.",
+        "highlights": [
+          "Own end-to-end strategy, budgeting, and delivery for national-level summits",
+          "Direct outreach and cultivation with colleges, youth networks, sponsors, and government stakeholders",
+          "Manage the complete participant experience from first contact through post-program follow-up",
+          "Lead team coordination and reporting to consistently meet or exceed program goals"
+        ],
+        "tags": [
+          "Program Management",
+          "Government Liaison",
+          "Strategy"
+        ]
+      }
+    ],
+    "throughline": [
+      "Thirteen roles. Two nonprofits, one student chapter, one advocacy network, one district, one national institute. Read separately, they look like a wide-ranging resume. Read together, they tell one story: start with the smallest, least-noticed task, do it with total reliability, and let people trust you with more only after you've earned it.",
+      "Nobody skips from SAP Coordinator to Program Manager. You get there one honest, unglamorous role at a time — and if this story inspires anything, let it be this: the small role you're in right now is not a detour from the big one you want. It's the only road there."
+    ]
+  }
 }

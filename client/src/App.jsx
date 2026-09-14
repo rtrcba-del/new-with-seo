@@ -6,7 +6,7 @@ import Nav          from "./components/Nav.jsx";
 import Footer       from "./sections/Footer.jsx";
 import ScrollToTop  from "./components/ScrollToTop.jsx";
 import HomePage        from "./pages/HomePage.jsx";
-import ProjectsPage     from "./pages/ProjectsPage.jsx";
+import JourneyPage      from "./pages/JourneyPage.jsx";
 import GalleryPage     from "./pages/GalleryPage.jsx";
 import ExperiencePage  from "./pages/ExperiencePage.jsx";
 import LeadershipPage  from "./pages/LeadershipPage.jsx";
@@ -38,7 +38,7 @@ export default function App() {
       .then(r => r.ok ? r.json() : null).then(d => { if (d) setVisitors(d.count); }).catch(()=>{});
   }, []);
 
-  const { profile, stats, capabilities, projects, experience, leadership, certifications, gallery, social, awards, references } = content;
+  const { profile, stats, capabilities, projects, journey, experience, leadership, certifications, gallery, social, awards, references } = content;
 
   return (
     <BrowserRouter>
@@ -48,7 +48,7 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage profile={profile} stats={stats} capabilities={capabilities} projects={projects} />} />
-            <Route path="/projects" element={<ProjectsPage projects={projects} />} />
+            <Route path="/journey" element={<JourneyPage journey={journey} />} />
             <Route path="/gallery" element={<GalleryPage gallery={gallery} />} />
             <Route path="/experience" element={<ExperiencePage experience={experience} certifications={certifications} awards={awards} />} />
             <Route path="/leadership" element={<LeadershipPage leadership={leadership} />} />

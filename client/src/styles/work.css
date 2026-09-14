@@ -12,6 +12,26 @@
 .case-stat-val{display:block;font-family:var(--font-display);font-size:2.2rem;line-height:1;}
 .case-stat-label{display:block;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.03em;text-transform:uppercase;margin-top:.3em;}
 
+/* Compact chip variant used on the Journey page — same idea as case-stat,
+   scaled down so it reads as a label, not a slab covering the photo. */
+.case-stat--chip{
+  left:.9rem;bottom:.9rem;right:auto;max-width:calc(100% - 1.8rem);
+  display:inline-flex;align-items:baseline;gap:.55em;
+  background:rgba(11,26,38,.72);backdrop-filter:blur(6px);
+  border:1px solid rgba(247,181,56,.55);
+  border-radius:999px;padding:.4rem .9rem .4rem .8rem;
+  color:var(--text-on-dark);
+}
+.case-stat--chip .case-stat-val{
+  font-size:.78rem;line-height:1;color:var(--marigold);
+  font-family:var(--font-mono);font-weight:700;letter-spacing:.03em;
+}
+.case-stat--chip .case-stat-label{
+  margin-top:0;font-size:.68rem;letter-spacing:.02em;
+  color:rgba(255,255,255,.88);text-transform:none;font-family:var(--font-body);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
 .case-copy{color:var(--text-on-dark);}
 .case-kicker{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-on-dark-mute);margin-bottom:.7em;}
 .case-title{font-family:var(--font-display);font-weight:800;font-size:clamp(1.5rem,2.8vw,2.3rem);line-height:.98;letter-spacing:.01em;text-transform:uppercase;margin-bottom:.5em;}
@@ -36,3 +56,13 @@
   .case,.case--rev{grid-template-columns:1fr;direction:ltr;}
   .case-media img{aspect-ratio:16/10;}
 }
+
+/* Journey page: 13 chapters need a tighter rhythm than 3 case files. */
+.case-list--journey{gap:var(--sp5);}
+.case-list--journey .case-media img{aspect-ratio:4/3;}
+.work--journey{padding-block:var(--sp5) var(--sp5);}
+
+.journey-close{max-width:52ch;margin:var(--sp5) auto 0;text-align:center;color:var(--text-on-dark);}
+.journey-close-kicker{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--marigold);margin-bottom:.9em;}
+.journey-close p{font-size:1.02rem;line-height:1.75;color:rgba(255,255,255,.82);margin-bottom:1em;}
+.journey-close p:last-child{margin-bottom:0;}
