@@ -194,17 +194,7 @@ function extraNodes(route) {
   const url = `${SITE}${route}`;
   switch (route) {
     case "/about":
-      return [
-        {
-          "@type": "FAQPage",
-          "@id": `${url}#faq`,
-          mainEntity: content.faq.map((f) => ({
-            "@type": "Question",
-            name: f.q,
-            acceptedAnswer: { "@type": "Answer", text: f.a },
-          })),
-        },
-      ];
+      return [];
     case "/experience":
       return [
         {
@@ -303,9 +293,6 @@ function bodyFor(route) {
 <p><strong>${esc(P.positioning.join(" · "))}</strong> — ${esc(P.location)}</p>
 <p>${esc(P.tagline)}</p>
 <p>${esc(P.summary)}</p>
-<h2>${esc(content.overview.heading)}</h2>
-<p>${esc(content.overview.body)}</p>
-<p>${esc(content.overview.aka)}</p>
 <h2>Impact at a glance</h2>
 ${list(content.stats.map((s) => `<strong>${esc(s.value)} ${esc(s.unit)}</strong> — ${esc(s.label)}`))}
 <h2>Core capabilities</h2>
@@ -326,12 +313,9 @@ ${list([
   `<strong>Education:</strong> ${esc(P.education)}`,
   `<strong>Languages:</strong> ${esc(P.languages.join(", "))}`,
   `<strong>Birthplace:</strong> ${esc(P.birthplace)}`,
-  `<strong>Also written as:</strong> ${esc(P.aliases.join(", "))}`,
 ])}
 <h2>References available on request</h2>
 ${list(content.references.map((r) => `${esc(r.name)} — ${esc(r.title)}`))}
-<h2>Frequently asked questions</h2>
-${content.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}
 <p><a href="/experience">View experience</a> · <a href="/chandra-bhakta-adhikari-resume.pdf">Full CV (PDF)</a></p>`;
     case "/experience":
       return `${h(`Experience & Certifications — ${NAME}`)}

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Hero from "../sections/Hero.jsx";
 import ImpactBar from "../sections/ImpactBar.jsx";
 import Capabilities from "../sections/Capabilities.jsx";
-import Overview from "../sections/Overview.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { useSEO, routeSEO } from "../lib/seo.js";
 
@@ -20,7 +19,6 @@ export default function HomePage({ profile, stats, capabilities, journey, overvi
     <>
       <Hero profile={profile} />
       <ImpactBar stats={stats} />
-      <Overview overview={overview} />
       <Capabilities capabilities={capabilities} />
 
       <section className="home-teaser">

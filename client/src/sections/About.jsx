@@ -25,9 +25,6 @@ export default function About({ profile, references, embedded }) {
             <div><p className="about-fact-label">Education</p><p className="about-fact-val">{profile?.education}</p></div>
             <div><p className="about-fact-label">Languages</p><p className="about-fact-val">{profile?.languages?.join(", ")}</p></div>
             <div><p className="about-fact-label">Birthplace</p><p className="about-fact-val">{profile?.birthplace}</p></div>
-            {profile?.aliases?.length > 0 && (
-              <div className="about-fact--wide"><p className="about-fact-label">Also written as</p><p className="about-fact-val">{profile.aliases.join(", ")}</p></div>
-            )}
           </div>
           <div className="about-btns">
             <a href="/chandra-bhakta-adhikari-resume.pdf" download="Chandra_Bhakta_Adhikari_Resume.pdf" className="btn btn--marigold">
