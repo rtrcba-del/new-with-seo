@@ -2,19 +2,16 @@ import { Link } from "react-router-dom";
 import Hero from "../sections/Hero.jsx";
 import ImpactBar from "../sections/ImpactBar.jsx";
 import Capabilities from "../sections/Capabilities.jsx";
+import Overview from "../sections/Overview.jsx";
 import Reveal from "../components/Reveal.jsx";
-import { useSEO } from "../lib/seo.js";
+import { useSEO, routeSEO } from "../lib/seo.js";
 
 // The three chapters that best summarize the range of the Journey:
 // grassroots training, district-level scale, and the current flagship role.
 const HIGHLIGHT_IDS = ["trainer-connection-nepal", "district-secretary", "program-manager"];
 
-export default function HomePage({ profile, stats, capabilities, journey }) {
-  useSEO({
-    title: "Program Manager & Strategic Partnerships",
-    description: "Chandra Bhakta Adhikari is a Nepal-based Program Manager and Strategic Partnerships professional working across youth leadership, entrepreneurship, stakeholder engagement and community development.",
-    path: "/",
-  });
+export default function HomePage({ profile, stats, capabilities, journey, overview }) {
+  useSEO(routeSEO("/"));
   const chapters = journey?.chapters ?? [];
   const preview = HIGHLIGHT_IDS
     .map((id) => chapters.find((c) => c.id === id))
@@ -23,6 +20,7 @@ export default function HomePage({ profile, stats, capabilities, journey }) {
     <>
       <Hero profile={profile} />
       <ImpactBar stats={stats} />
+      <Overview overview={overview} />
       <Capabilities capabilities={capabilities} />
 
       <section className="home-teaser">

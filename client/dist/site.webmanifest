@@ -1,0 +1,10 @@
+{
+  "name": "Chandra Bhakta Adhikari",
+  "short_name": "C.B. Adhikari",
+  "description": "Program Manager and Strategic Partnerships professional based in Nepal.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F5F6F7",
+  "theme_color": "#072D49",
+  "icons": [{ "src": "/images/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

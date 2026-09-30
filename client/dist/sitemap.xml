@@ -3,56 +3,212 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://adhikarichandra.com.np/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-portrait-lounge.jpg</image:loc>
-      <image:title>Chandra Bhakta Adhikari, Program Manager and Strategic Partnerships professional</image:title>
+      <image:title>Chandra Bhakta Adhikari, Program Manager and Strategic Partnerships professional in Nepal</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://adhikarichandra.com.np/about</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-portrait.jpg</image:loc>
-      <image:title>Chandra Bhakta Adhikari, Program Manager and Strategic Partnerships professional</image:title>
+      <image:title>Portrait of Chandra Bhakta Adhikari, Program Manager based in Bhaktapur, Nepal</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://adhikarichandra.com.np/experience</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://adhikarichandra.com.np/journey</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://adhikarichandra.com.np/leadership</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-rotaract-installation-ceremony.jpg</image:loc>
-      <image:title>Chandra Bhakta Adhikari speaking at the 7th Rotaract Club Installation Ceremony</image:title>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-nepal-business-summit.jpg</image:loc>
+      <image:title>Chandra Bhakta Adhikari at the Nepal Business Summit</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adhikarichandra.com.np/journey</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-mhm-wash-training.jpg</image:loc>
+      <image:title>Chandra Bhakta Adhikari leading MHM and WASH field training in rural Nepal</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adhikarichandra.com.np/leadership</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-rotaract-district-3292.jpg</image:loc>
+      <image:title>Chandra Bhakta Adhikari representing Rotaract District 3292, Nepal and Bhutan</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://adhikarichandra.com.np/gallery</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-keynote-rotaract-conference.jpg</image:loc>
+      <image:title>Chandra Bhakta Adhikari delivering a keynote at a Rotaract conference</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-rotaract-3292-presidents-night-nagarkot.jpg</image:loc>
+      <image:title>Rotaract 3292 President&#39;s Night, Nagarkot (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-presenting-rotaract-district-3292-budget.jpg</image:loc>
+      <image:title>Presenting the District 3292 budget, Nepal &amp; Bhutan (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-reusable-sanitary-pad-enterprise-training.jpg</image:loc>
+      <image:title>Reusable sanitary pad enterprise training, full classroom (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-pets-sets-chitwan-communication-skills-session.jpg</image:loc>
+      <image:title>PETS-SETS Chitwan, addressing 150+ club leaders (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-guest-session-panel-discussion.jpg</image:loc>
+      <image:title>Guest session, panel discussion (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-handing-over-recognition-community-partner.jpg</image:loc>
+      <image:title>Handing over recognition to a community partner (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-speaking-at-podium-vrindavan.jpg</image:loc>
+      <image:title>At the podium, Vrindavan (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-addressing-rotary-international-session.jpg</image:loc>
+      <image:title>Addressing the room, Rotary International session (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-addressing-packed-conference-hall.jpg</image:loc>
+      <image:title>Addressing a packed conference hall (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-asha-project-nepal-school-supply-distribution.jpg</image:loc>
+      <image:title>Asha Nepal school supply distribution (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-mhm-program-shree-secondary-school-madhopur.jpg</image:loc>
+      <image:title>Shree Secondary School Madhopur, MHM program (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-reusable-pad-making-circle-rural-school.jpg</image:loc>
+      <image:title>Reusable pad-making circle, rural school (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-hands-on-stitching-demonstration.jpg</image:loc>
+      <image:title>Hands-on stitching demonstration (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-field-training-session-community-classroom.jpg</image:loc>
+      <image:title>Field training session, community classroom (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-setting-up-training-materials.jpg</image:loc>
+      <image:title>Setting up the day&#39;s training materials (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-workshop-with-young-professionals.jpg</image:loc>
+      <image:title>Workshop session with young professionals (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-district-planning-table.jpg</image:loc>
+      <image:title>Between sessions, district planning table (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-18th-rotaract-district-conference.jpg</image:loc>
+      <image:title>18th Rotaract District Conference (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-7th-club-installation-ceremony-rotaract-united-birgunj.jpg</image:loc>
+      <image:title>7th Club Installation Ceremony, Rotaract United Birgunj (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-with-rotaract-district-leadership-team.jpg</image:loc>
+      <image:title>With the district leadership team (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-mhm-training-circle-rural-school.jpg</image:loc>
+      <image:title>MHM training circle, rural school (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-wash-training-session-rural-nepal.jpg</image:loc>
+      <image:title>WASH training session, rural Nepal (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-speaking-at-2nd-ps-meet-chitwan.jpg</image:loc>
+      <image:title>Speaking at 2nd PS Meet, Chitwan (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-teaching-communication-skills-pets-sets-chitwan.jpg</image:loc>
+      <image:title>Teaching communication skills, PETS-SETS Chitwan (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-planning-next-program.jpg</image:loc>
+      <image:title>Planning the next program (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-district-event-formal-attire.jpg</image:loc>
+      <image:title>District event, formal attire (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-district-event-entrance-formal.jpg</image:loc>
+      <image:title>District event, formal attire (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-rotaract-district-3292-polo.jpg</image:loc>
+      <image:title>Rotaract District 3292 polo (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-off-duty-portrait.jpg</image:loc>
+      <image:title>Off duty (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-bungee-jump-nepal.jpg</image:loc>
+      <image:title>238m free fall, same nerves as walking on stage, faster (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-trekking-above-snowline-nepal.jpg</image:loc>
+      <image:title>Above the snowline. Fieldwork builds a habit of high places (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-pokhara-annapurna-range-world-peace-pagoda.jpg</image:loc>
+      <image:title>Annapurna range, World Peace Pagoda, Pokhara (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-shiva-statue-pokhara.jpg</image:loc>
+      <image:title>At the Shiva statue, Pokhara (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-phewa-lake-pokhara.jpg</image:loc>
+      <image:title>Off the clock, Phewa Lake, Pokhara (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-lake-view-nepal.jpg</image:loc>
+      <image:title>Wide open, somewhere with a view (Chandra Bhakta Adhikari)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://adhikarichandra.com.np/contact</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://adhikarichandra.com.np/images/chandra-bhakta-adhikari-portrait-lounge.jpg</image:loc>
+      <image:title>Chandra Bhakta Adhikari, available for speaking, training and partnerships</image:title>
+    </image:image>
   </url>
 </urlset>

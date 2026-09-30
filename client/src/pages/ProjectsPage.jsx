@@ -4,7 +4,7 @@ import { useSEO } from "../lib/seo.js";
 
 export default function ProjectsPage({ projects }) {
   useSEO({
-    title: "Projects & Case Studies",
+    title: "Projects & Case Studies | Chandra Bhakta Adhikari",
     description: "Case studies from Chandra Bhakta Adhikari's work: Nepal Business Summit, Rotaract District 3292 leadership, and MHM/WASH field campaigns across 20+ districts of Nepal.",
     path: "/projects",
   });

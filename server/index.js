@@ -17,6 +17,21 @@ const PORT = process.env.PORT || 4000;
 app.set("trust proxy", 1);
 app.disable("x-powered-by");
 
+/* ── Canonical URL hygiene (SEO) ──
+ * www -> apex and /about/ -> /about, both 301, so link equity and crawl budget
+ * go to exactly one URL per page. */
+app.use((req, res, next) => {
+  const host = (req.headers.host || "").toLowerCase();
+  if (host === "www.adhikarichandra.com.np") {
+    return res.redirect(301, `${SITE_URL}${req.originalUrl}`);
+  }
+  if (req.path.length > 1 && req.path.endsWith("/") && req.method === "GET") {
+    const q = req.originalUrl.slice(req.path.length);
+    return res.redirect(301, req.path.replace(/\/+$/, "") + q);
+  }
+  next();
+});
+
 /* ── Security headers ──
  * CSP is deliberately without 'unsafe-inline'/'unsafe-eval' for scripts.
  * JSON-LD <script type="application/ld+json"> blocks aren't executable so
@@ -97,6 +112,13 @@ const writeJSON = (f, d) => fs.writeFileSync(dataPath(f), JSON.stringify(d, null
  * that don't send a Referer (most search/AI image crawlers, curl, social
  * link-preview bots) untouched. */
 const ownHosts = new Set(["adhikarichandra.com.np", "www.adhikarichandra.com.np", "localhost", "127.0.0.1"]);
+let imageRedirects = {};
+try { imageRedirects = JSON.parse(fs.readFileSync(path.join(__dirname, "../client/dist/image-redirects.json"), "utf-8")); } catch { /* none */ }
+app.use("/images", (req, res, next) => {
+  const moved = imageRedirects[req.path.replace(/^\//, "")];
+  if (moved) return res.redirect(301, `/images/${moved}`);
+  next();
+});
 app.use("/images", (req, res, next) => {
   const referer = req.headers["referer"] || req.headers["referrer"];
   if (referer) {
@@ -183,12 +205,25 @@ function buildHtmlForRoute(routePath, content, nonce) {
   return html;
 }
 
+// Prerendered mode: `npm run build` (client) emits dist/<route>/index.html for
+// every route plus dist/404.html — complete per-page HTML for crawlers that
+// never run JS. If those files are missing (someone ran a bare `vite build`),
+// fall back to the older per-request head/snapshot injection below.
+const prerenderedFile = (routePath) => {
+  const f = routePath === "/" ? indexHtmlPath : path.join(dist, routePath, "index.html");
+  return fs.existsSync(f) ? f : null;
+};
+const isPrerendered = fs.existsSync(path.join(dist, "about", "index.html"));
+
 if (fs.existsSync(dist)) {
   // Long cache for hashed static assets; HTML itself is handled below and
   // must never be cached long since it's rewritten per route.
   app.use(
     express.static(dist, {
       index: false,
+      // Don't let express.static 301 /about -> /about/ (dist/about/ is a
+      // directory); the route handler below serves dist/about/index.html.
+      redirect: false,
       setHeaders: (res, filePath) => {
         if (/\.[a-f0-9]{8,}\.(js|css)$/i.test(filePath)) {
           res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
@@ -200,6 +235,14 @@ if (fs.existsSync(dist)) {
   app.get("*", (req, res) => {
     const routePath = req.path === "" ? "/" : req.path;
     const known = Boolean(ROUTES[routePath]);
+
+    if (isPrerendered) {
+      res.setHeader("Cache-Control", "no-cache");
+      if (known) return res.type("html").send(fs.readFileSync(prerenderedFile(routePath), "utf-8"));
+      const nf = path.join(dist, "404.html");
+      return res.status(404).type("html").send(fs.readFileSync(fs.existsSync(nf) ? nf : indexHtmlPath, "utf-8"));
+    }
+
     const content = readJSON("content.json");
     let html = buildHtmlForRoute(known ? routePath : "/", content, res.locals.cspNonce) || fs.readFileSync(indexHtmlPath, "utf-8");
     res.setHeader("Cache-Control", "no-cache");

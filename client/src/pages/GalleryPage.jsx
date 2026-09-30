@@ -1,13 +1,9 @@
 import PageHeader from "../components/PageHeader.jsx";
 import Gallery from "../sections/Gallery.jsx";
-import { useSEO } from "../lib/seo.js";
+import { useSEO, routeSEO } from "../lib/seo.js";
 
 export default function GalleryPage({ gallery }) {
-  useSEO({
-    title: "Gallery",
-    description: "Photos of Chandra Bhakta Adhikari across national stages, Rotaract District 3292 leadership events, and MHM/WASH field training in rural Nepal.",
-    path: "/gallery",
-  });
+  useSEO(routeSEO("/gallery"));
   return (
     <>
       <PageHeader

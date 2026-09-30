@@ -1,0 +1,92 @@
+{
+  "siteUrl": "https://adhikarichandra.com.np",
+  "siteName": "Chandra Bhakta Adhikari",
+  "defaultImage": "/images/chandra-bhakta-adhikari-portrait-lounge.jpg",
+  "defaultImageAlt": "Chandra Bhakta Adhikari, Program Manager and Strategic Partnerships professional in Nepal",
+  "routes": {
+    "/": {
+      "title": "Chandra Bhakta Adhikari (Chandra Adhikari) | Program Manager, Nepal",
+      "description": "Official site of Chandra Bhakta Adhikari (Chandra Adhikari): Program Manager at Nepal Business Institute, Rotaract 3292 leader, youth entrepreneurship.",
+      "keywords": "Chandra Bhakta Adhikari, Chandra Adhikari, Bhakta Adhikari, C.B. Adhikari, Chandra Adhikari Nepal, Chandra Adhikari Program Manager, Chandra Adhikari Nepal Business Institute, NBI Nepal, Nepal Youth Entrepreneurship Summit NYES, Nepal Business Summit, Rotaract District 3292, youth entrepreneurship Nepal, strategic partnerships Nepal, Kathmandu Valley",
+      "name": "Home",
+      "type": "ProfilePage",
+      "priority": "1.0",
+      "image": "/images/chandra-bhakta-adhikari-portrait-lounge.jpg",
+      "imageAlt": "Chandra Bhakta Adhikari, Program Manager and Strategic Partnerships professional in Nepal"
+    },
+    "/about": {
+      "title": "About Chandra Bhakta Adhikari (Chandra Adhikari) | Who Is He?",
+      "description": "Who is Chandra Bhakta Adhikari, also written Chandra Adhikari or C.B. Adhikari? Nepal Program Manager, geologist, Rotaract leader. Bio, roles and FAQ.",
+      "keywords": "who is Chandra Adhikari, who is Chandra Bhakta Adhikari, about Chandra Adhikari, Chandra Adhikari biography, Chandra Adhikari profile, Chandra Adhikari professional, what does Chandra Adhikari do, Chandra Adhikari known for, Chandra Adhikari LinkedIn, Chandra Adhikari Instagram, Chandra Adhikari Facebook, Chandra Adhikari portfolio, Bhaktapur Nepal",
+      "name": "About",
+      "type": "AboutPage",
+      "priority": "0.8",
+      "image": "/images/chandra-bhakta-adhikari-portrait.jpg",
+      "imageAlt": "Portrait of Chandra Bhakta Adhikari, Program Manager based in Bhaktapur, Nepal"
+    },
+    "/experience": {
+      "title": "Chandra Adhikari Experience: NBI Program Manager | Certifications",
+      "description": "Experience of Chandra Bhakta Adhikari: Program Manager at Nepal Business Institute (NBI), Asha Project Nepal, Connection Nepal. 21 certifications, awards.",
+      "keywords": "Chandra Adhikari Program Manager, Chandra Bhakta Adhikari NBI Program Manager, Nepal Business Institute program manager, Nepal Business Summit, NYES, event and summit management Nepal, stakeholder engagement, partnership development, Asha Project Nepal, Connection Nepal trainer",
+      "name": "Experience",
+      "type": "ProfilePage",
+      "priority": "0.8",
+      "image": "/images/chandra-bhakta-adhikari-nepal-business-summit.jpg",
+      "imageAlt": "Chandra Bhakta Adhikari at the Nepal Business Summit"
+    },
+    "/journey": {
+      "title": "Chandra Adhikari Career Journey: 15 Roles in Nepal",
+      "description": "Career journey of Chandra Bhakta Adhikari in 15 chapters: youth leadership, Rotaract, MHM/WASH training, to Program Manager at Nepal Business Institute.",
+      "keywords": "Chandra Adhikari career, Chandra Bhakta Adhikari journey, youth leadership Nepal, youth development Nepal, community development Nepal, social impact, Rotaract to program manager, MHM WASH DRR trainer Nepal",
+      "name": "Journey",
+      "type": "CollectionPage",
+      "priority": "0.9",
+      "image": "/images/chandra-bhakta-adhikari-mhm-wash-training.jpg",
+      "imageAlt": "Chandra Bhakta Adhikari leading MHM and WASH field training in rural Nepal"
+    },
+    "/leadership": {
+      "title": "Chandra Adhikari Rotaract Leader | District 3292 Secretary",
+      "description": "Rotaract leadership of Chandra Bhakta Adhikari: District Secretary of Rotaract District 3292 (Nepal & Bhutan, 150+ clubs) and Sukedhara club adviser.",
+      "keywords": "Chandra Adhikari Rotaract, Chandra Bhakta Adhikari Rotaract District 3292, Rotaract leader Nepal, Rotaract District Secretary, Rotaract Club of Sukedhara, youth leadership Nepal, community leadership, leadership development",
+      "name": "Leadership",
+      "type": "ProfilePage",
+      "priority": "0.8",
+      "image": "/images/chandra-bhakta-adhikari-rotaract-district-3292.jpg",
+      "imageAlt": "Chandra Bhakta Adhikari representing Rotaract District 3292, Nepal and Bhutan"
+    },
+    "/gallery": {
+      "title": "Chandra Adhikari Photos: Stage, Field & Rotaract Gallery",
+      "description": "Photos of Chandra Bhakta Adhikari (Chandra Adhikari) at summits, Rotaract District 3292 events and MHM/WASH training in rural Nepal.",
+      "keywords": "Chandra Adhikari photos, Chandra Bhakta Adhikari photo, Chandra Adhikari images, Rotaract District 3292 photos, Nepal Business Summit photos, MHM WASH training Nepal",
+      "name": "Gallery",
+      "type": "CollectionPage",
+      "priority": "0.6",
+      "image": "/images/chandra-bhakta-adhikari-keynote-rotaract-conference.jpg",
+      "imageAlt": "Chandra Bhakta Adhikari delivering a keynote at a Rotaract conference"
+    },
+    "/contact": {
+      "title": "Contact Chandra Adhikari | Speaker & Partnerships, Nepal",
+      "description": "Contact Chandra Bhakta Adhikari (Chandra Adhikari) for speaking, MHM/WASH and DRR training, event partnerships and collaboration in Nepal.",
+      "keywords": "contact Chandra Adhikari, Chandra Bhakta Adhikari email, Chandra Adhikari LinkedIn, book speaker Nepal, youth leadership trainer Nepal, partnership Nepal Business Institute",
+      "name": "Contact",
+      "type": "ContactPage",
+      "priority": "0.7",
+      "image": "/images/chandra-bhakta-adhikari-portrait-lounge.jpg",
+      "imageAlt": "Chandra Bhakta Adhikari, available for speaking, training and partnerships"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found | Chandra Bhakta Adhikari",
+    "description": "This page doesn't exist or has moved."
+  },
+  "aliases": [
+    "Chandra Adhikari",
+    "Bhakta Adhikari",
+    "Chandra Bhakta",
+    "Chandra B. Adhikari",
+    "C. B. Adhikari",
+    "C.B. Adhikari",
+    "C B Adhikari",
+    "Chandra B Adhikari"
+  ]
+}

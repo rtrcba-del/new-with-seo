@@ -1,1 +1,2 @@
-/*  /index.html  200
+# Real pages are prerendered (about/index.html, ...). Anything else is a true 404.
+/*  /404.html  404

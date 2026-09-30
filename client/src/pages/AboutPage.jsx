@@ -1,13 +1,10 @@
 import PageHeader from "../components/PageHeader.jsx";
 import About from "../sections/About.jsx";
-import { useSEO } from "../lib/seo.js";
+import FAQ from "../sections/FAQ.jsx";
+import { useSEO, routeSEO } from "../lib/seo.js";
 
-export default function AboutPage({ profile, references }) {
-  useSEO({
-    title: "About",
-    description: "About Chandra Bhakta Adhikari: geologist by training, Program Manager and Strategic Partnerships professional based in Bhaktapur, Nepal.",
-    path: "/about",
-  });
+export default function AboutPage({ profile, references, faq }) {
+  useSEO(routeSEO("/about"));
   return (
     <>
       <PageHeader
@@ -15,6 +12,7 @@ export default function AboutPage({ profile, references }) {
         title="About"
       />
       <About profile={profile} references={references} embedded />
+      <FAQ faq={faq} />
     </>
   );
 }

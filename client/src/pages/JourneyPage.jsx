@@ -1,13 +1,9 @@
 import PageHeader from "../components/PageHeader.jsx";
 import Journey from "../sections/Journey.jsx";
-import { useSEO } from "../lib/seo.js";
+import { useSEO, routeSEO } from "../lib/seo.js";
 
 export default function JourneyPage({ journey }) {
-  useSEO({
-    title: "Journey",
-    description: "Chandra Bhakta Adhikari's career journey across fifteen roles: from grassroots training and Rotaract club committees to Program Manager of Nepal's flagship national business summits.",
-    path: "/journey",
-  });
+  useSEO(routeSEO("/journey"));
   return (
     <>
       <PageHeader

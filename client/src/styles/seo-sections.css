@@ -1,0 +1,18 @@
+/* Overview (home) + FAQ (about) — reuse existing tokens/section patterns */
+.overview{background:var(--parchment);padding-block:var(--sp6);}
+.overview-inner{max-width:900px;}
+.overview-body{font-size:1.1rem;line-height:1.85;color:var(--text-body);margin-bottom:var(--sp3);}
+.overview-links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;}
+.overview-links a{color:var(--crimson);font-weight:600;text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:1px;}
+.overview-links a:hover{color:var(--marigold);}
+
+.faq{background:var(--paper);padding-block:var(--sp6);}
+.faq-inner{max-width:900px;}
+.faq-list{margin-top:var(--sp4);display:grid;gap:var(--sp3);}
+.faq-item{padding-bottom:var(--sp3);border-bottom:1.5px dashed var(--parchment-dim);}
+.faq-item:last-child{border-bottom:0;}
+.faq-q{font-family:var(--font-display);font-size:1.2rem;line-height:1.35;color:var(--text-dark);margin-bottom:.5em;}
+.faq-a{font-size:1rem;line-height:1.8;color:var(--text-body);}
+
+.about-fact--wide{grid-column:1/-1;}
+.overview-aka{font-size:.92rem;color:var(--text-mute);margin:0 0 var(--sp3);}

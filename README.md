@@ -3,6 +3,111 @@
 Multi-page React (Vite) site + Express API. Brand: Playfair Display (headings) + Inter (body),
 refined navy/muted-blue/coral-red palette per a professional color audit.
 
+## Name-search & photo visibility update (latest)
+
+Goal: make the site and its photos appear for every spelling of the name (Chandra Adhikari,
+Bhakta Adhikari, C.B. Adhikari, ...) and for the "who is / what does ... do" questions people ask
+Google, Bing and AI assistants. Done the way search engines reward — identity signals and real
+answers — not by stuffing keyword lists (hidden or repeated keyword blocks are penalized).
+
+- **Name variants as identity data**: all 8 spellings are in the Person schema `alternateName`,
+  in a visible "Also written as" line on /about and the homepage overview, in `llms.txt`, and in
+  natural sentences in titles/descriptions. Stored in `content.json` -> `profile.aliases`.
+- **9 new FAQ answers** phrased like real searches ("What does Chandra Adhikari do?", "What is
+  Chandra Adhikari's role at NBI and in NYES?", "Is he on LinkedIn/Instagram/Facebook?", "Does he
+  have a personal website?", "Are Chandra Adhikari, Bhakta Adhikari and C.B. Adhikari the same
+  person?") — 19 total, all answered only from facts already on the site. The last one also
+  disambiguates him from other people with the common surname Adhikari.
+- **Titles, descriptions and meta keywords rewritten per page** around your keyword groups
+  (name, program manager, NBI, NYES, Nepal Business Summit, Rotaract 3292, youth
+  entrepreneurship, strategic partnerships). Edit in `client/src/data/seo.json`. Note: Google and
+  Bing ignore the keywords meta tag; titles, headings and on-page text are what count.
+- **Photos**: 35 gallery images renamed from `g-bungee.jpg`-style to
+  `chandra-bhakta-adhikari-<what-it-shows>.jpg` (old URLs 301-redirect — Express, Vercel,
+  Netlify); 3 portraits listed in the Person schema so engines can pick a profile photo; 42
+  captioned images in `sitemap.xml`; a missing caption that produced alt text "...: undefined"
+  fixed. Rename map: `client/scripts/image-renames.json`.
+- **Kathmandu Valley**: Bhaktapur is in the Kathmandu Valley, so copy and schema say so
+  (`addressRegion`, `containedInPlace`). The site does not claim he is *in* Kathmandu city.
+- **Left out on purpose** (not stated anywhere on the site, so not asserted): "Nepal Business Summit /
+  NYES 2026", "NextGen Nepal", "entrepreneur" (he develops entrepreneurship programs; the site
+  doesn't say he founded a business), "investment ecosystem", "private sector", "business
+  development". Add them via `content.json` once you can back them with real facts.
+
+**What will and won't happen:** these steps make the site eligible and easy to understand.
+Ranking for a common name ("Chandra Adhikari") depends on off-site signals too: use the exact
+name and website link on LinkedIn/Facebook/Instagram bios, get pages from NBI, Rotaract 3292,
+Connection Nepal and Asha Project that name and link to him, and submit the sitemap in Search
+Console and Bing Webmaster Tools. Google Images/Bing Images take days to weeks to pick up new
+filenames — expect gradual change, not overnight.
+
+## SEO / GEO / AEO overhaul (latest revision — read this first)
+
+**The problem this fixes:** the site is a client-rendered SPA, so Google (which runs JS) saw each
+page correctly, but Bing, Apple and nearly all AI crawlers (GPTBot, ClaudeBot, PerplexityBot,
+CCBot ...) fetch raw HTML and saw the *same* homepage tags and an empty `<div id="root">` on every
+URL. That is now fixed at build time, for **every** deploy option (Vercel, Render, Netlify, any
+static host) — no longer only the Express one.
+
+### What `npm run build` now produces (`client/scripts/prerender.mjs`)
+- **One real HTML file per route** (`dist/about/index.html`, ...) with its own `<title>`, meta
+  description, canonical, hreflang, robots directives (`max-image-preview:large, max-snippet:-1`),
+  Open Graph + Twitter tags (with image size + alt), and a **crawlable text copy of the page's
+  real content** inside `#root` (React replaces it on mount; visitors with JS off see it).
+- **schema.org JSON-LD `@graph` per page**: `Person` (full entity: roles, orgs, education,
+  languages, awards, `knowsAbout`, `sameAs`, 21 `hasCredential` entries on /experience), `WebSite`,
+  page type (`ProfilePage` / `AboutPage` / `CollectionPage` / `ContactPage`), `BreadcrumbList`,
+  `FAQPage` (/about — matches the visible FAQ), `ItemList` (experience, journey, leadership) and
+  `ImageGallery` with captioned `ImageObject`s (/gallery).
+- **`sitemap.xml`** with image entries (all captioned gallery photos), **`robots.txt`** naming
+  Googlebot, Bingbot and ~25 AI/answer-engine crawlers (and blocking only `/api/`),
+  **`llms.txt`** + **`llms-full.txt`** (LLM-readable summary and the full site text),
+  **`404.html`** (real 404 status instead of a soft-404 homepage clone), `site.webmanifest`.
+- Single source of truth for titles/descriptions/images: `client/src/data/seo.json` (read by both
+  the React `useSEO` hook and the prerender). Edit it in one place.
+
+### New visible content (search + AI answers quote this)
+- **"Who is Chandra Bhakta Adhikari?"** overview block on the homepage (a self-contained answer
+  paragraph plus descriptive internal links to About, Experience, Leadership, Contact).
+- **10-question FAQ** on `/about` (role, Nepal Business Summit, MHM/WASH/DRR training, Rotaract
+  3292, Asha Project, education, certifications, awards, speaking availability). Every answer is
+  built only from facts already in `content.json` — nothing invented.
+- Rewritten titles (≤ ~65 chars) and descriptions (≤ 160 chars) for all 7 pages.
+- Both live in `content.json` (`overview`, `faq`) — kept identical in `client/src/data/` and
+  `server/data/`.
+
+### Server / hosting changes
+- `server/index.js`: serves the prerendered page for each route, a true `404` for unknown URLs,
+  301 `www` -> apex and `/about/` -> `/about`. (Falls back to the older injection if `dist/` was
+  built without the prerender step.)
+- `client/vercel.json`: `cleanUrls`, no catch-all rewrite (unknown URLs now get `404.html`),
+  cache headers, same security headers as before. `client/public/_redirects` (Netlify) likewise.
+- **`client/dist/` is committed and pre-built** — Render's `buildCommand` only runs `npm install`,
+  so after any content/SEO change run `npm run build` (root) and commit `client/dist/`.
+- Because pages are now baked at build time, editing `server/data/content.json` alone updates the
+  in-app text after hydration but **not** the crawler-facing HTML. Rebuild to update both.
+
+### Do these after deploying (only you can)
+1. **Google Search Console** -> add the domain -> submit `https://adhikarichandra.com.np/sitemap.xml`
+   -> "Request indexing" on the 7 URLs.
+2. **Bing Webmaster Tools** -> add site (or import from Search Console) -> submit the sitemap.
+   Then run `npm run indexnow --prefix client` after each deploy (key file already included at
+   `client/public/5bd907f035ebd516c63e037265f36cdb.txt`) for fast Bing/Yandex re-crawls.
+3. Optional verification tags: set `GOOGLE_SITE_VERIFICATION` / `BING_SITE_VERIFICATION` env vars
+   in your build environment; the prerender adds the meta tags automatically.
+4. Validate with Google's Rich Results Test and validator.schema.org on `/about` and `/`.
+5. Off-site signals matter as much as on-site: make the LinkedIn/Facebook/Instagram bios use the
+   exact name "Chandra Bhakta Adhikari" and link to the site; get real press/partner mentions
+   (Nepal Business Institute, Rotaract 3292, Connection Nepal, Asha Project pages linking to you).
+
+### Content consistency to review (found while reading `content.json`)
+- Reach figures differ across the site: "62 districts" (stats bar), "10+ districts" (summary,
+  Connection Nepal), "20+ districts" (MHM case file). The new copy uses the conservative
+  "5,000+ trained" and avoids repeating a district count. Pick one and align them.
+- Program Manager start date: "Sep 2025" (leadership, journey) vs "Nov 2025" (experience).
+- The District Secretary term (Jul 2025 – Jun 2026) has ended; several older lines are still in
+  present tense. New copy says "served ... in 2025–26".
+
 ## Latest revision (this build)
 - **Content** rewritten from the updated resume: professional summary, all four experience
   entries (dates, roles, responsibilities), core competencies mapped into the capabilities
@@ -85,8 +190,7 @@ If you only need one, edit `client/src/data/content.json` and rebuild (`npm run 
   Facebook, Instagram; `jobTitle`, `knowsAbout`, `alumniOf`, `worksFor` filled in).
 - **Open Graph + Twitter Card meta tags**, base versions in `index.html`, updated per-route by
   the SEO hook for browsers that execute JS.
-- **`robots.txt`** at `client/public/robots.txt`, pointing to the sitemap.
-- **`sitemap.xml`** at `client/public/sitemap.xml`, listing all 7 pages.
+- **`robots.txt`** and **`sitemap.xml`** are now generated into `dist/` by the prerender step (see top).
 - **Custom 404 page**, self-excluded from indexing via `<meta name="robots" content="noindex, nofollow">`.
 - **Descriptive image filenames and alt text** for the highest-traffic images (hero, about,
   leadership, and the three project case-file photos), e.g.

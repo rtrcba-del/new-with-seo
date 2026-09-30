@@ -2,26 +2,241 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "rewrites": [
-    { "source": "/((?!robots.txt|sitemap.xml|images/|chandra-cv.pdf|chandra-bhakta-adhikari-resume.pdf|assets/).*)", "destination": "/index.html" }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
-        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/(llms.txt|llms-full.txt|robots.txt)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/images/g-presidents-night-welcome.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-rotaract-3292-presidents-night-nagarkot.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-district-budget-podium.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-presenting-rotaract-district-3292-budget.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-sewing-classroom-full.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-reusable-sanitary-pad-enterprise-training.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-communication-skills.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-pets-sets-chitwan-communication-skills-session.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-mic-bluescreen.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-guest-session-panel-discussion.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-appreciation-handoff.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-handing-over-recognition-community-partner.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-vrindavan-podium.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-speaking-at-podium-vrindavan.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-podium-flowers-rotary.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-addressing-rotary-international-session.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-audience-seated-hall.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-addressing-packed-conference-hall.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-backpacks-kids.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-asha-project-nepal-school-supply-distribution.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-school-groupphoto.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-mhm-program-shree-secondary-school-madhopur.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-circle-sewing.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-reusable-pad-making-circle-rural-school.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-circle-fabric.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-hands-on-stitching-demonstration.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-classroom-whiteboard.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-field-training-session-community-classroom.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-classroom-supplies.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-setting-up-training-materials.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-classroom-professionals.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-workshop-with-young-professionals.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-panel-laptops.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-district-planning-table.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-conference.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-18th-rotaract-district-conference.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-installation.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-7th-club-installation-ceremony-rotaract-united-birgunj.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-audience.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-with-rotaract-district-leadership-team.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-classroom1.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-mhm-training-circle-rural-school.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-classroom2.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-wash-training-session-rural-nepal.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-stage2.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-speaking-at-2nd-ps-meet-chitwan.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-stage-comm.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-teaching-communication-skills-pets-sets-chitwan.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-office.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-planning-next-program.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-formal-stepandrepeat.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-district-event-formal-attire.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-entrance.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-district-event-entrance-formal.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-poolside.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-rotaract-district-3292-polo.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-casual.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-off-duty-portrait.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-bungee.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-bungee-jump-nepal.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-trekking.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-trekking-above-snowline-nepal.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-pokhara.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-pokhara-annapurna-range-world-peace-pagoda.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-shiva.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-shiva-statue-pokhara.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-pink-boat.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-phewa-lake-pokhara.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/images/g-lake-arms-magenta.jpg",
+      "destination": "/images/chandra-bhakta-adhikari-lake-view-nepal.jpg",
+      "permanent": true
     }
   ]
 }

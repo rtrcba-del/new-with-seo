@@ -1,8 +1,16 @@
 import { useEffect } from "react";
+import seo from "../data/seo.json";
 
-export const SITE_URL = "https://adhikarichandra.com.np";
-export const SITE_NAME = "Chandra Bhakta Adhikari";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/chandra-bhakta-adhikari-portrait.jpg`;
+export const SITE_URL = seo.siteUrl;
+export const SITE_NAME = seo.siteName;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}${seo.defaultImage}`;
+
+/** Look up the shared title/description/image for a route (single source of
+ *  truth: src/data/seo.json — also read by scripts/prerender.mjs at build). */
+export function routeSEO(path) {
+  const r = seo.routes[path];
+  return { ...r, path };
+}
 
 function setMeta(attr, key, content) {
   if (!content) return;
@@ -25,75 +33,41 @@ function setLink(rel, href) {
   el.setAttribute("href", href);
 }
 
-function setJsonLd(id, data) {
-  let el = document.getElementById(id);
-  if (!data) {
-    if (el) el.remove();
-    return;
-  }
-  if (!el) {
-    el = document.createElement("script");
-    el.type = "application/ld+json";
-    el.id = id;
-    document.head.appendChild(el);
-  }
-  el.textContent = JSON.stringify(data);
-}
-
-function breadcrumbLD(path) {
-  const segments = path.split("/").filter(Boolean);
-  const items = [{ name: "Home", path: "/" }];
-  let acc = "";
-  for (const seg of segments) {
-    acc += `/${seg}`;
-    items.push({ name: seg.charAt(0).toUpperCase() + seg.slice(1), path: acc });
-  }
-  return {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((item, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: item.name,
-      item: `${SITE_URL}${item.path}`,
-    })),
-  };
-}
-
 /**
- * Applies per-page title, description, canonical URL and social meta.
- * Runs on every route change. Since this is a client-rendered SPA, the very
- * first HTML Googlebot / social-share bots see before JS executes still uses
- * the defaults baked into index.html — this hook improves the *rendered*
- * snapshot Googlebot indexes (it does execute JS) but does not change what
- * non-JS scrapers (some link-preview bots) see. For guaranteed non-JS
- * previews per page, a prerender/SSR step would be the next upgrade.
+ * Keeps <head> correct during client-side navigation. The first load of every
+ * page already ships complete, page-specific head tags and JSON-LD from the
+ * build-time prerender (scripts/prerender.mjs), so crawlers that never run JS
+ * see the right data; this hook only updates title/description/canonical/
+ * social tags when a visitor moves between routes without a full reload.
+ * Structured data (JSON-LD) is deliberately left to the prerender: a fresh
+ * crawl of any URL returns that page's own complete set.
  */
 export function useSEO({ title, description, path = "/", noindex = false, image }) {
   useEffect(() => {
-    const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} | Program Manager & Strategic Partnerships`;
     const url = `${SITE_URL}${path}`;
-    const desc = description || "Chandra Bhakta Adhikari is a Nepal-based Program Manager and Strategic Partnerships professional working across youth leadership, entrepreneurship, stakeholder engagement and community development.";
-    const img = image || DEFAULT_OG_IMAGE;
+    const img = image ? (image.startsWith("http") ? image : `${SITE_URL}${image}`) : DEFAULT_OG_IMAGE;
 
-    document.title = fullTitle;
-    setMeta("name", "description", desc);
-    setMeta("name", "robots", noindex ? "noindex, nofollow" : "index, follow");
+    document.title = title;
+    setMeta("name", "description", description);
+    setMeta(
+      "name",
+      "robots",
+      noindex
+        ? "noindex, nofollow"
+        : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    );
     setLink("canonical", url);
 
-    setMeta("property", "og:title", fullTitle);
-    setMeta("property", "og:description", desc);
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", description);
     setMeta("property", "og:url", url);
     setMeta("property", "og:image", img);
     setMeta("property", "og:type", "website");
     setMeta("property", "og:site_name", SITE_NAME);
 
     setMeta("name", "twitter:card", "summary_large_image");
-    setMeta("name", "twitter:title", fullTitle);
-    setMeta("name", "twitter:description", desc);
+    setMeta("name", "twitter:title", title);
+    setMeta("name", "twitter:description", description);
     setMeta("name", "twitter:image", img);
-
-    // Breadcrumb schema on every page.
-    setJsonLd("ld-breadcrumb", breadcrumbLD(path));
   }, [title, description, path, noindex, image]);
 }

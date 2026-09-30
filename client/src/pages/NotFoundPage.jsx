@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useSEO } from "../lib/seo.js";
+import seo from "../data/seo.json";
 
 export default function NotFoundPage() {
   useSEO({
-    title: "Page Not Found",
-    description: "This page doesn't exist.",
+    title: seo.notFound.title,
+    description: seo.notFound.description,
     path: "/404",
     noindex: true,
   });

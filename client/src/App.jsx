@@ -38,7 +38,7 @@ export default function App() {
       .then(r => r.ok ? r.json() : null).then(d => { if (d) setVisitors(d.count); }).catch(()=>{});
   }, []);
 
-  const { profile, stats, capabilities, journey, experience, leadership, certifications, gallery, social, awards, references } = content;
+  const { profile, stats, capabilities, journey, experience, leadership, certifications, gallery, social, awards, references, overview, faq } = content;
 
   return (
     <BrowserRouter>
@@ -47,12 +47,12 @@ export default function App() {
       <PageFade>
         <main>
           <Routes>
-            <Route path="/" element={<HomePage profile={profile} stats={stats} capabilities={capabilities} journey={journey} />} />
+            <Route path="/" element={<HomePage profile={profile} stats={stats} capabilities={capabilities} journey={journey} overview={overview} />} />
             <Route path="/journey" element={<JourneyPage journey={journey} />} />
             <Route path="/gallery" element={<GalleryPage gallery={gallery} />} />
             <Route path="/experience" element={<ExperiencePage experience={experience} certifications={certifications} awards={awards} />} />
             <Route path="/leadership" element={<LeadershipPage leadership={leadership} />} />
-            <Route path="/about" element={<AboutPage profile={profile} references={references} />} />
+            <Route path="/about" element={<AboutPage profile={profile} references={references} faq={faq} />} />
             <Route path="/contact" element={<ContactPage profile={profile} social={social} />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
