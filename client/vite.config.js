@@ -6,12 +6,16 @@ export default defineConfig(({ command }) => ({
     port: 5173,
     proxy: { "/api": { target: "http://localhost:4000", changeOrigin: true } }
   },
-  esbuild: {
-    // Strip console/debugger statements from the production bundle only —
-    // `vite dev` keeps them for local debugging.
-    drop: command === "build" ? ["console", "debugger"] : [],
-  },
   build: {
-    minify: "esbuild",
+    // Vite 8 minifies with Oxc (via Rolldown). Strip console/debugger
+    // statements from the production bundle only; `vite dev` keeps them for
+    // local debugging.
+    rolldownOptions: {
+      output: {
+        minify: command === "build"
+          ? { compress: { dropConsole: true, dropDebugger: true } }
+          : undefined,
+      },
+    },
   }
 }));

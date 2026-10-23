@@ -48,11 +48,14 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
-        scriptSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`],
+        // challenges.cloudflare.com: Cloudflare Turnstile on the contact form.
+        // formspree.io: the contact form posts there directly.
+        scriptSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`, "https://challenges.cloudflare.com"],
         styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
         fontSrc: ["'self'", "https://fonts.gstatic.com"],
         imgSrc: ["'self'", "data:"],
-        connectSrc: ["'self'"],
+        connectSrc: ["'self'", "https://formspree.io", "https://challenges.cloudflare.com"],
+        frameSrc: ["https://challenges.cloudflare.com"],
         objectSrc: ["'none'"],
         baseUri: ["'self'"],
         frameAncestors: ["'none'"],
@@ -216,6 +219,18 @@ const prerenderedFile = (routePath) => {
 const isPrerendered = fs.existsSync(path.join(dist, "about", "index.html"));
 
 if (fs.existsSync(dist)) {
+  // /.well-known/security.txt (RFC 9116). express.static ignores dotfiles by
+  // default, so this folder needs its own mount with dotfiles allowed.
+  app.use(
+    "/.well-known",
+    express.static(path.join(dist, ".well-known"), {
+      dotfiles: "allow",
+      index: false,
+      redirect: false,
+      setHeaders: (res) => res.setHeader("Cache-Control", "public, max-age=86400"),
+    })
+  );
+
   // Long cache for hashed static assets; HTML itself is handled below and
   // must never be cached long since it's rewritten per route.
   app.use(
@@ -232,7 +247,9 @@ if (fs.existsSync(dist)) {
     })
   );
 
-  app.get("*", (req, res) => {
+  // Express 5 (path-to-regexp 8) no longer accepts a bare "*"; a named
+  // wildcard is required. "{*splat}" also matches "/".
+  app.get("/{*splat}", (req, res) => {
     const routePath = req.path === "" ? "/" : req.path;
     const known = Boolean(ROUTES[routePath]);
 

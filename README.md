@@ -3,7 +3,47 @@
 Multi-page React (Vite) site + Express API. Brand: Playfair Display (headings) + Inter (body),
 refined navy/muted-blue/coral-red palette per a professional color audit.
 
-## Name-search & photo visibility update (latest)
+## Runtime, dependency and security update (Oct 2026, latest)
+
+**Runtimes.** This project is Node only (React/Vite client + Express server); it contains no PHP.
+Node 24 (current LTS) is the target: `.nvmrc` = 24, `engines.node` = `>=22.12.0` (Vite 8 needs
+20.19+/22.12+), Render pinned via `NODE_VERSION=24` in `render.yaml`. On Vercel, set
+Project Settings -> Node.js Version to 24.x. Node 18 and 20 are end-of-life and are no longer
+tested.
+
+**Dependencies.** React 18 -> 19.3, react-router-dom 7.18.4, Vite 5 -> 8.3 (+ plugin-react 6),
+Express 4 -> 5.3, cors 2.8.6, express-rate-limit 8.7.1, helmet 8.3. `npm audit` is clean for both
+`client/` and `server/`. Code changes the upgrades required: `vite.config.js` (Vite 8 minifies with
+Oxc, so console/debugger stripping moved to `rolldownOptions.output.minify.compress`) and the
+catch-all route in `server/index.js` (`"*"` -> `"/{*splat}"`).
+
+**CI.** `.github/workflows/webpack.yml` ran `npx webpack`, which this project has never used, so
+it could not pass. Replaced by `ci.yml`: `npm ci`, the real build (Vite + prerender) and a server
+smoke test on Node 22 and 24.
+
+**Cloudflare Security Insights fixes in this repo**
+- `security.txt`: added `client/public/.well-known/security.txt` (served by Express through a
+  dedicated dotfile-enabled mount). It expires 2027-10-01; renew the `Expires` date yearly.
+- Turnstile: the contact form now renders a Cloudflare Turnstile widget when
+  `VITE_TURNSTILE_SITE_KEY` is set at build time (see `client/.env.example`). Create the widget in
+  Cloudflare -> Turnstile, add the domain, then paste the **secret** key into Formspree (form
+  settings -> CAPTCHA -> Cloudflare Turnstile). Formspree verifies the token; no server code needed.
+- CSP bug fixed: `connect-src 'self'` blocked the form's request to `formspree.io`, so the contact
+  form could not submit on hosts sending these headers (Vercel config and Express). The CSP now
+  allows `formspree.io` and `challenges.cloudflare.com` in `client/vercel.json`, the new
+  `client/public/_headers` (Cloudflare Pages / Netlify) and `server/index.js`. Keep those three
+  in sync.
+
+**Cloudflare dashboard items (cannot be fixed from code)**
+- *Domains without HSTS*: SSL/TLS -> Edge Certificates -> HSTS -> enable (max-age 6 months or
+  more, include subdomains). The origin already sends HSTS; this setting covers Cloudflare's edge.
+- *Unproxied CNAME records*: DNS -> Records -> switch the two CNAMEs to Proxied (orange cloud).
+  Check your host first: Vercel recommends not proxying through Cloudflare, so for a Vercel-hosted
+  site you may prefer to leave DNS-only and dismiss the insight.
+- *Users without MFA*: Manage Account -> Members (and your own Profile -> Authentication) -> turn
+  on two-factor authentication for the listed user.
+
+## Name-search & photo visibility update
 
 Goal: make the site and its photos appear for every spelling of the name (Chandra Adhikari,
 Bhakta Adhikari, C.B. Adhikari, ...) and for the "who is / what does ... do" questions people ask

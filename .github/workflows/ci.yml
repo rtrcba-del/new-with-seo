@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        # Node 24 is the current LTS line, Node 22 is in maintenance.
+        # Node 18 and 20 are end-of-life and are no longer tested.
+        node-version: [22.x, 24.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: npm
+        cache-dependency-path: |
+          client/package-lock.json
+          server/package-lock.json
+
+    - name: Install client dependencies
+      run: npm ci --prefix client
+
+    - name: Install server dependencies
+      run: npm ci --prefix server
+
+    - name: Build client (Vite build + prerender)
+      run: npm run build --prefix client
+
+    - name: Smoke test server
+      run: |
+        node server/index.js &
+        SERVER_PID=$!
+        sleep 3
+        curl -fsS http://localhost:4000/api/health
+        curl -fsS -o /dev/null http://localhost:4000/about
+        curl -fsS http://localhost:4000/.well-known/security.txt
+        kill $SERVER_PID

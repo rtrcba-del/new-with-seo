@@ -2,6 +2,11 @@ node_modules/
 dist/.vite/
 *.log
 
+# Local environment files (keep .env.example committed)
+.env
+.env.local
+.env.*.local
+
 # Full-resolution originals backed up here before the images in
 # client/public/images/ were resized/recompressed for web delivery — see
 # README "Performance" section. Deliberately not committed: keeping 33MB of

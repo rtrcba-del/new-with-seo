@@ -1,5 +1,28 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Reveal from "../components/Reveal.jsx";
+
+// Cloudflare Turnstile (spam protection). The site key is public. Set it as
+// VITE_TURNSTILE_SITE_KEY at build time; when empty, no widget is shown and the
+// form behaves as before. The secret key goes in Formspree (form settings ->
+// CAPTCHA -> Cloudflare Turnstile), never in this repo.
+const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY || "";
+const TURNSTILE_SRC = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+
+function loadTurnstile() {
+  if (window.turnstile) return Promise.resolve(window.turnstile);
+  if (!window.__turnstileLoading) {
+    window.__turnstileLoading = new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = TURNSTILE_SRC;
+      s.async = true;
+      s.defer = true;
+      s.onload = () => resolve(window.turnstile);
+      s.onerror = () => { window.__turnstileLoading = null; reject(new Error("turnstile-load")); };
+      document.head.appendChild(s);
+    });
+  }
+  return window.__turnstileLoading;
+}
 
 const TOPICS = [
   "Speaking / Training Invitation",
@@ -18,6 +41,39 @@ export default function Contact({ profile, social, embedded }) {
   const [busy, setBusy]     = useState(false);
   const [done, setDone]     = useState(false);
   const [errors, setErrors] = useState({});
+  const [token, setToken]   = useState("");
+  const tsBox    = useRef(null);
+  const tsWidget = useRef(null);
+
+  useEffect(() => {
+    if (!TURNSTILE_SITE_KEY || done) return undefined;
+    let cancelled = false;
+    loadTurnstile()
+      .then((ts) => {
+        if (cancelled || !tsBox.current) return;
+        tsWidget.current = ts.render(tsBox.current, {
+          sitekey: TURNSTILE_SITE_KEY,
+          callback: (t) => setToken(t),
+          "expired-callback": () => setToken(""),
+          "error-callback": () => setToken(""),
+        });
+      })
+      .catch(() => setErrors({ submit: "Could not load the spam check. Please refresh and try again." }));
+    return () => {
+      cancelled = true;
+      if (tsWidget.current != null && window.turnstile) {
+        try { window.turnstile.remove(tsWidget.current); } catch { /* already removed */ }
+      }
+      tsWidget.current = null;
+    };
+  }, [done]);
+
+  const resetTurnstile = () => {
+    setToken("");
+    if (tsWidget.current != null && window.turnstile) {
+      try { window.turnstile.reset(tsWidget.current); } catch { /* widget gone */ }
+    }
+  };
 
   const upd = (f) => (e) => setForm(v => ({ ...v, [f]: e.target.value }));
 
@@ -34,17 +90,29 @@ export default function Contact({ profile, social, embedded }) {
     const errs = validate();
     setErrors(errs);
     if (Object.keys(errs).length) return;
+    if (TURNSTILE_SITE_KEY && !token) {
+      setErrors({ submit: "Please complete the spam check before sending." });
+      return;
+    }
     setBusy(true);
     try {
+      // FormData (not JSON): the format Formspree documents for Turnstile.
+      const body = new FormData();
+      body.append("name", form.name);
+      body.append("email", form.email);
+      body.append("topic", form.topic);
+      body.append("message", form.message);
+      if (token) body.append("cf-turnstile-response", token);
       const res = await fetch("https://formspree.io/f/xgogdylj", {
         method: "POST",
-        headers: { Accept: "application/json", "Content-Type": "application/json" },
-        body: JSON.stringify({ name: form.name, email: form.email, topic: form.topic, message: form.message }),
+        headers: { Accept: "application/json" },
+        body,
       });
       if (res.ok) { setDone(true); }
-      else { setErrors({ submit: "Something went wrong. Please try again." }); }
+      else { setErrors({ submit: "Something went wrong. Please try again." }); resetTurnstile(); }
     } catch {
       setErrors({ submit: "Network error. Please try again." });
+      resetTurnstile();
     } finally { setBusy(false); }
   };
 
@@ -124,8 +192,9 @@ export default function Contact({ profile, social, embedded }) {
                 <textarea id="ct-msg" name="message" value={form.message} onChange={upd("message")} placeholder="Tell me about the event, dates, and what you have in mind..." />
                 {errors.message && <span className="field-err">{errors.message}</span>}
               </div>
+              {TURNSTILE_SITE_KEY && <div ref={tsBox} style={{ marginBottom: "1rem", minHeight: 65 }} />}
               {errors.submit && <p className="field-err" style={{marginBottom:"1rem"}}>{errors.submit}</p>}
-              <button type="submit" className="btn btn--marigold form-submit" disabled={busy}>
+              <button type="submit" className="btn btn--marigold form-submit" disabled={busy || (Boolean(TURNSTILE_SITE_KEY) && !token)}>
                 {busy ? "Sending…" : "Send Message"}
               </button>
             </form>

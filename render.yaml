@@ -6,3 +6,7 @@ services:
     buildCommand: npm install
     startCommand: npm start
     plan: free
+    envVars:
+      # Node 24 is the current LTS line (Node 18 and 20 are end-of-life).
+      - key: NODE_VERSION
+        value: "24"
